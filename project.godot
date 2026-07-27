@@ -11,7 +11,6 @@ config_version=5
 [application]
 
 config/name="The Roadside Chorus"
-run/main_scene="uid://b3ns7vt3o513f"
 config/features=PackedStringArray("4.4", "Mobile")
 config/icon="res://icon.svg"
 
