@@ -11,7 +11,8 @@ config_version=5
 [application]
 
 config/name="The Roadside Chorus"
-config/features=PackedStringArray("4.6", "Mobile")
+run/main_scene="uid://b3ns7vt3o513f"
+config/features=PackedStringArray("4.4", "Mobile")
 config/icon="res://icon.svg"
 
 [physics]
@@ -21,4 +22,5 @@ config/icon="res://icon.svg"
 [rendering]
 
 rendering_device/driver.windows="d3d12"
-renderer/rendering_method="mobile"
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
