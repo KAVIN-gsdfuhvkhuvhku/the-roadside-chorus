@@ -28,7 +28,12 @@ directories/dch_directory={}
 directories/dtl_directory={
 "timeline1": "res://timelines/timeline1.dtl"
 }
-layout/style_directory={}
+layout/style_directory={
+"Style_1": "res://Styles/Style_1.tres"
+}
+layout/style_list=["res://Styles/Style_1.tres"]
+layout/default_style="res://timelines/Style_1.tres"
+variables={}
 
 [editor_plugins]
 
