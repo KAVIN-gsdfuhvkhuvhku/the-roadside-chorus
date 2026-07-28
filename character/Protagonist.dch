@@ -10,16 +10,16 @@
 "style": "",
 "suffix": ""
 },
-&"default_portrait": "Idle",
+&"default_portrait": "Nuetral ",
 &"description": "",
-&"display_name": "Protagonist ",
+&"display_name": "You",
 &"mirror": false,
 &"nicknames": [""],
-&"offset": Vector2(0, 0),
+&"offset": Vector2(300, 100),
 &"portraits": {
-"Idle": {
+"Nuetral ": {
 "export_overrides": {
-"image": ""
+"image": "\"res://Character/protagonist_1.PNG\""
 },
 "mirror": false,
 "offset": Vector2(0, 0),
@@ -27,5 +27,5 @@
 "scene": ""
 }
 },
-&"scale": 1.0
+&"scale": 0.9
 }
