@@ -153,10 +153,10 @@ func _apply_box_settings() -> void:
 	if ResourceLoader.exists(box_panel):
 		dialog_text_panel.add_theme_stylebox_override(&'panel', load(box_panel) as StyleBox)
 
-	##if box_color_use_global:
-		##dialog_text_panel.self_modulate = get_global_setting(&'bg_color', box_color_custom)
-	##else:
-		##dialog_text_panel.self_modulate = box_color_custom##
+	if box_color_use_global:
+		dialog_text_panel.self_modulate = get_global_setting(&'bg_color', box_color_custom)
+	else:
+		dialog_text_panel.self_modulate = box_color_custom
 
 	var sizer: Control = %Sizer
 	sizer.size = box_size
