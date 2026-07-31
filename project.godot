@@ -15,21 +15,17 @@ compatibility/default_parent_skeleton_in_mesh_instance_3d=true
 [application]
 
 config/name="The Roadside Chorus"
-config/features=PackedStringArray("4.6", "Mobile")
+config/features=PackedStringArray("4.4", "Mobile")
 config/icon="res://icon.svg"
 
 [autoload]
 
-Dialogic="*uid://ds2q0uclmolvu"
+Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 
 [dialogic]
 
-directories/dch_directory={
-"protagonist": "res://Character/protagonist.dch"
-}
-directories/dtl_directory={
-"timeline1": "res://timelines/timeline1.dtl"
-}
+directories/dch_directory={}
+directories/dtl_directory={}
 layout/style_directory={
 "Style_1": "res://Styles/Style_1.tres"
 }
