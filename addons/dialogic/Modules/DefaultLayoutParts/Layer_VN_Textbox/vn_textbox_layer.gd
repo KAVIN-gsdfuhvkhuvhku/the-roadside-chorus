@@ -1,23 +1,5 @@
 @tool
 extends DialogicLayoutLayer
-## This layer's scene file contains following nodes:
-## - a dialog_text node
-## - a name_label node
-## - a next_indicator node
-## - a type_sound node
-##
-## As well as custom:
-## - animations
-## - auto-advance progress indicator
-##
-## If you want to customize this layer, here is a little rundown of this layer:
-## The Layer Settings are divided into the `@export_group`s below.
-## They get applied in [method _apply_export_overrides].
-## Each `@export_group` has its own method to apply the settings to the scene.
-## If you want to change a specific part inside the scene, you can simply
-## remove or add # (commenting) to the method line.
-
-
 
 enum Alignments {LEFT, CENTER, RIGHT}
 
@@ -153,10 +135,10 @@ func _apply_box_settings() -> void:
 	if ResourceLoader.exists(box_panel):
 		dialog_text_panel.add_theme_stylebox_override(&'panel', load(box_panel) as StyleBox)
 
-	##if box_color_use_global:
-		##dialog_text_panel.self_modulate = get_global_setting(&'bg_color', box_color_custom)
-	##else:
-		##dialog_text_panel.self_modulate = box_color_custom##
+	if box_color_use_global:
+		dialog_text_panel.self_modulate = get_global_setting(&'bg_color', box_color_custom)
+	else:
+		dialog_text_panel.self_modulate = box_color_custom
 
 	var sizer: Control = %Sizer
 	sizer.size = box_size
