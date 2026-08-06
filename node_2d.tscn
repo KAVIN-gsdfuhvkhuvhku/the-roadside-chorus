@@ -1,10 +1,13 @@
 [gd_scene format=3 uid="uid://be2gupdr5mp76"]
 
-[ext_resource type="Texture2D" uid="uid://bthxv1ggiwqcw" path="res://assets/Bedroom_background.PNG" id="1_wtcfe"]
+[ext_resource type="Texture2D" uid="uid://bthxv1ggiwqcw" path="res://assets/PLACEHOLDERbedroom_background.PNG" id="1_wtcfe"]
+[ext_resource type="PackedScene" uid="uid://tgnrjl2bja2i" path="res://character.tscn" id="2_0e48y"]
+[ext_resource type="PackedScene" uid="uid://cs85hmukq2cs4" path="res://dialogue_ui.tscn" id="3_epypp"]
 
 [node name="Node2D" type="Node2D" unique_id=1844694227]
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=2130658078]
+layer = -1
 
 [node name="TextureRect" type="TextureRect" parent="CanvasLayer" unique_id=1126431741]
 anchors_preset = 15
@@ -13,3 +16,24 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("1_wtcfe")
+
+[node name="CanvasLayer2" type="CanvasLayer" parent="." unique_id=628146881]
+
+[node name="Control" type="Control" parent="CanvasLayer2" unique_id=836549542]
+layout_mode = 3
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -20.0
+offset_top = -40.0
+offset_right = 20.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="character" parent="CanvasLayer2/Control" unique_id=1701866460 instance=ExtResource("2_0e48y")]
+position = Vector2(316, -280.00003)
+scale = Vector2(3.5, 3.5)
+
+[node name="dialogue_ui" parent="CanvasLayer2" unique_id=917116363 instance=ExtResource("3_epypp")]

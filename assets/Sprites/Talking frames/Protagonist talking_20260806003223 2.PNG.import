@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bthxv1ggiwqcw"
-path="res://.godot/imported/bedroom_background.PNG-ebae57143878203d9b39448fbca1a9b2.ctex"
+uid="uid://bv431yrskbufc"
+path="res://.godot/imported/Protagonist talking_20260806003223 2.PNG-32dadb50a97d49d969deeae9dd686782.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/bedroom_background.PNG"
-dest_files=["res://.godot/imported/bedroom_background.PNG-ebae57143878203d9b39448fbca1a9b2.ctex"]
+source_file="res://assets/Sprites/Talking frames/Protagonist talking_20260806003223 2.PNG"
+dest_files=["res://.godot/imported/Protagonist talking_20260806003223 2.PNG-32dadb50a97d49d969deeae9dd686782.ctex"]
 
 [params]
 

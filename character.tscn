@@ -1,0 +1,51 @@
+[gd_scene format=3 uid="uid://tgnrjl2bja2i"]
+
+[ext_resource type="Texture2D" uid="uid://crpht1p6631u5" path="res://assets/Sprites/Idle Frames/Protagonist Neutral + Blink + Yawn_20260806002927 2.PNG" id="1_0qilt"]
+[ext_resource type="Texture2D" uid="uid://g34iuh002gek" path="res://assets/Sprites/Idle Frames/Protagonist Neutral + Blink + Yawn_20260806003223 2.PNG" id="2_s621p"]
+[ext_resource type="Texture2D" uid="uid://bv431yrskbufc" path="res://assets/Sprites/Talking frames/Protagonist talking_20260806003223 2.PNG" id="3_24d8c"]
+[ext_resource type="Texture2D" uid="uid://dt7nkgutulf1k" path="res://assets/Sprites/Talking frames/Protagonist Neutral + Blink + Yawn_20260806002915 2.PNG" id="4_5wqil"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_24d8c"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_0qilt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_s621p")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_24d8c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_5wqil")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_24d8c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_0qilt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_5wqil")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_5wqil")
+}],
+"loop": true,
+"name": &"talking",
+"speed": 5.0
+}]
+
+[node name="character" type="Node2D" unique_id=1701866460]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1409875743]
+scale = Vector2(0.215, 0.21499999)
+sprite_frames = SubResource("SpriteFrames_24d8c")
+animation = &"talking"
+frame_progress = 0.42790192
