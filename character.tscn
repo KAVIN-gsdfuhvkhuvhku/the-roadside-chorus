@@ -13,12 +13,39 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": ExtResource("2_s621p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_s621p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_s621p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_s621p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_s621p")
 }],
 "loop": true,
 "name": &"idle",
-"speed": 5.0
+"speed": 8.0
 }, {
 "frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_24d8c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_5wqil")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_24d8c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_5wqil")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_5wqil")
+}, {
 "duration": 1.0,
 "texture": ExtResource("3_24d8c")
 }, {
@@ -39,7 +66,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"talking",
-"speed": 5.0
+"speed": 8.0
 }]
 
 [node name="character" type="Node2D" unique_id=1701866460]
@@ -47,5 +74,5 @@ animations = [{
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1409875743]
 scale = Vector2(0.215, 0.21499999)
 sprite_frames = SubResource("SpriteFrames_24d8c")
-animation = &"talking"
-frame_progress = 0.42790192
+animation = &"idle"
+frame_progress = 0.71439874
