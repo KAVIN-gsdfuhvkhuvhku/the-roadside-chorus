@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://be2gupdr5mp76"]
 
-[ext_resource type="Texture2D" uid="uid://bthxv1ggiwqcw" path="res://assets/PLACEHOLDERbedroom_background.PNG" id="1_wtcfe"]
-[ext_resource type="PackedScene" uid="uid://tgnrjl2bja2i" path="res://character.tscn" id="2_0e48y"]
-[ext_resource type="PackedScene" uid="uid://cs85hmukq2cs4" path="res://dialogue_ui.tscn" id="3_epypp"]
+[ext_resource type="Texture2D" uid="uid://bthxv1ggiwqcw" path="res://assets/Images/PLACEHOLDERbedroom_background.PNG" id="1_wtcfe"]
+[ext_resource type="PackedScene" uid="uid://tgnrjl2bja2i" path="res://Scenes/character.tscn" id="2_0e48y"]
+[ext_resource type="PackedScene" uid="uid://cs85hmukq2cs4" path="res://Scenes/dialogue_ui.tscn" id="3_epypp"]
 
 [node name="Node2D" type="Node2D" unique_id=1844694227]
 

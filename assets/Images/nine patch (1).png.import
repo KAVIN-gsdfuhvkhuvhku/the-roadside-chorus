@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cbtnwcd2rmn21"
-path="res://.godot/imported/Protagonist Neutral + Blink + Yawn_20260806003234 2.PNG-f6a50b2d40f1271b9883923554badc28.ctex"
+uid="uid://bie5nqcjve88b"
+path="res://.godot/imported/nine patch (1).png-e2a8e684db9dd4260c283e5f5d5005ac.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Sprites/Talking frames/Protagonist Neutral + Blink + Yawn_20260806003234 2.PNG"
-dest_files=["res://.godot/imported/Protagonist Neutral + Blink + Yawn_20260806003234 2.PNG-f6a50b2d40f1271b9883923554badc28.ctex"]
+source_file="res://assets/Images/nine patch (1).png"
+dest_files=["res://.godot/imported/nine patch (1).png-e2a8e684db9dd4260c283e5f5d5005ac.ctex"]
 
 [params]
 

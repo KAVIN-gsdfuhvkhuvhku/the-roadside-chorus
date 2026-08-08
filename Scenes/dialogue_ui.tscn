@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://cs85hmukq2cs4"]
 
-[ext_resource type="Theme" uid="uid://1exugx4b1mto" path="res://new_theme.tres" id="1_njptv"]
-[ext_resource type="FontFile" uid="uid://bww2oh2xqdaih" path="res://assets/VT323/VT323-Regular.ttf" id="2_2x5cq"]
+[ext_resource type="Theme" uid="uid://1exugx4b1mto" path="res://Resources/new_theme.tres" id="1_njptv"]
+[ext_resource type="FontFile" uid="uid://bww2oh2xqdaih" path="res://assets/Fonts/VT323/VT323-Regular.ttf" id="2_2x5cq"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_v6amk"]
 font = ExtResource("2_2x5cq")
@@ -19,6 +19,7 @@ offset_right = 1.0
 offset_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme = ExtResource("1_njptv")
 
 [node name="DialogueBox" type="PanelContainer" parent="." unique_id=1963534806]
 custom_minimum_size = Vector2(0, 150)
@@ -32,6 +33,12 @@ offset_right = -1.0
 grow_horizontal = 2
 grow_vertical = 0
 theme = ExtResource("1_njptv")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="DialogueBox" unique_id=611029057]
+layout_mode = 2
+bbcode_enabled = true
+text = "
+thuedifh ushdui dsikjci fhiudh shduh dsuhiduh sduihisudhfu thuedifh ushdui udhfiusdhfiu "
 
 [node name="SpeakerBox" type="PanelContainer" parent="." unique_id=548200346]
 custom_minimum_size = Vector2(200, 60)
@@ -62,6 +69,7 @@ offset_left = -40.0
 offset_top = -40.0
 grow_horizontal = 0
 grow_vertical = 0
+theme = ExtResource("1_njptv")
 
 [node name="Polygon2D" type="Polygon2D" parent="Control" unique_id=1887292942]
 position = Vector2(-69.000046, -29.000015)

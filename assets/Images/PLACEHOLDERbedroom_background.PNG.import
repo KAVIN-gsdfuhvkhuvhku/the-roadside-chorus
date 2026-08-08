@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bthxv1ggiwqcw"
-path="res://.godot/imported/PLACEHOLDERbedroom_background.PNG-60c44e915f8a5ca02b5f0f371f9a7c27.ctex"
+path="res://.godot/imported/PLACEHOLDERbedroom_background.PNG-495319ec2cddf6f12601774074dff5d0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/PLACEHOLDERbedroom_background.PNG"
-dest_files=["res://.godot/imported/PLACEHOLDERbedroom_background.PNG-60c44e915f8a5ca02b5f0f371f9a7c27.ctex"]
+source_file="res://assets/Images/PLACEHOLDERbedroom_background.PNG"
+dest_files=["res://.godot/imported/PLACEHOLDERbedroom_background.PNG-495319ec2cddf6f12601774074dff5d0.ctex"]
 
 [params]
 

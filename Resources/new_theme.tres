@@ -1,0 +1,21 @@
+[gd_resource type="Theme" format=3 uid="uid://1exugx4b1mto"]
+
+[ext_resource type="Texture2D" uid="uid://bie5nqcjve88b" path="res://assets/Images/nine patch (1).png" id="1_amlv4"]
+[ext_resource type="FontFile" uid="uid://bww2oh2xqdaih" path="res://assets/Fonts/VT323/VT323-Regular.ttf" id="2_i7eh4"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_i7eh4"]
+content_margin_left = 40.0
+content_margin_top = 20.0
+content_margin_right = 40.0
+content_margin_bottom = 20.0
+texture = ExtResource("1_amlv4")
+texture_margin_left = 25.0
+texture_margin_top = 25.0
+texture_margin_right = 25.0
+texture_margin_bottom = 25.0
+modulate_color = Color(1, 0.76924175, 0.64685506, 0.81700003)
+
+[resource]
+PanelContainer/styles/panel = SubResource("StyleBoxTexture_i7eh4")
+RichTextLabel/font_sizes/normal_font_size = 48
+RichTextLabel/fonts/normal_font = ExtResource("2_i7eh4")
