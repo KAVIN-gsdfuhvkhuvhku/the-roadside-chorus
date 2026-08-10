@@ -1,0 +1,81 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://b5qdmxq2jsmht"]
+
+[ext_resource type="Texture2D" uid="uid://cbl876p6yfk0" path="res://assets/Sprites/Grandma/Idle/Grandma Neutral + Blink_20260811064841.PNG" id="1_l7nhd"]
+[ext_resource type="Texture2D" uid="uid://dae12y7iui22y" path="res://assets/Sprites/Grandma/Idle/Grandma Neutral + Blink_20260811064847.PNG" id="2_gohy0"]
+[ext_resource type="Texture2D" uid="uid://j6eob1xi7q20" path="res://assets/Sprites/Grandma/Talking/Grandma Neutral + Blink_20260811063625.PNG" id="3_ktklh"]
+[ext_resource type="Texture2D" uid="uid://dvwbkqou2d0qp" path="res://assets/Sprites/Grandma/Talking/Grandma Neutral + Blink_20260811063650.PNG" id="4_p5a42"]
+[ext_resource type="Texture2D" uid="uid://cy6n06gq7yiqi" path="res://assets/Sprites/Grandma/Talking/Grandma Neutral + Blink_20260811063634.PNG" id="5_gqr8u"]
+[ext_resource type="Texture2D" uid="uid://b5mxm4eshavi2" path="res://assets/Sprites/Grandma/Talking/Grandma Neutral + Blink_20260811063655.PNG" id="6_2m50s"]
+[ext_resource type="Texture2D" uid="uid://yk6pwkdewc5" path="res://assets/Sprites/Grandma/Talking/Grandma Neutral + Blink_20260811063702.PNG" id="7_8xoby"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_l7nhd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_gohy0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_gohy0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_gohy0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_gohy0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_gohy0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_gohy0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_gohy0")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 4.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_l7nhd")
+}],
+"loop": true,
+"name": &"smile",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_ktklh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_p5a42")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_gqr8u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_gqr8u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_2m50s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_8xoby")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_p5a42")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_ktklh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_gqr8u")
+}],
+"loop": true,
+"name": &"talking",
+"speed": 8.0
+}]
