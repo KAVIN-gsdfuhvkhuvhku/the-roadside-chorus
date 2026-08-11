@@ -2,13 +2,14 @@
 
 [ext_resource type="Theme" uid="uid://1exugx4b1mto" path="res://Resources/new_theme.tres" id="1_njptv"]
 [ext_resource type="FontFile" uid="uid://bww2oh2xqdaih" path="res://assets/Fonts/VT323/VT323-Regular.ttf" id="2_2x5cq"]
+[ext_resource type="Script" uid="uid://cbqeo1t4y32j3" path="res://Scripts/dialog_ui.gd" id="2_yqatb"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_v6amk"]
 font = ExtResource("2_2x5cq")
 font_size = 40
 font_color = Color(1, 0.85430586, 0.6893704, 1)
 
-[node name="dialogue_ui" type="Control" unique_id=917116363]
+[node name="DialogUI" type="Control" unique_id=917116363]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -20,8 +21,9 @@ offset_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 theme = ExtResource("1_njptv")
+script = ExtResource("2_yqatb")
 
-[node name="DialogueBox" type="PanelContainer" parent="." unique_id=1963534806]
+[node name="DialogBox" type="PanelContainer" parent="." unique_id=1963534806]
 custom_minimum_size = Vector2(0, 150)
 layout_mode = 1
 anchors_preset = 12
@@ -34,7 +36,8 @@ grow_horizontal = 2
 grow_vertical = 0
 theme = ExtResource("1_njptv")
 
-[node name="RichTextLabel" type="RichTextLabel" parent="DialogueBox" unique_id=611029057]
+[node name="DialogLine" type="RichTextLabel" parent="DialogBox" unique_id=611029057]
+unique_name_in_owner = true
 layout_mode = 2
 bbcode_enabled = true
 text = "
@@ -53,7 +56,8 @@ offset_bottom = -151.0
 grow_vertical = 2
 theme = ExtResource("1_njptv")
 
-[node name="Label" type="Label" parent="SpeakerBox" unique_id=2024525910]
+[node name="SpeakerName" type="Label" parent="SpeakerBox" unique_id=2024525910]
+unique_name_in_owner = true
 layout_mode = 2
 text = " You"
 label_settings = SubResource("LabelSettings_v6amk")
