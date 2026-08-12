@@ -8,8 +8,7 @@ var dialog_index: int = 0
 const dialog_lines: Array[String] = [
 	"Grandma: Good morning dear, come eat breakfast!",
 	"You: of course let me grab our bowls",
-	"Grandma: nom nom… By the way dear, congrats on graduating high school! 
-	It feels like just yesterday when I dropped you off for your first day….",
+	"Grandma: nom nom… By the way dear, congrats on graduating high school! It feels like just yesterday when I dropped you off for your first day….",
 	"You: Thank you, I’m just glad I can relax now~",
 ]
 
