@@ -1,10 +1,10 @@
 [gd_resource type="SpriteFrames" format=3 uid="uid://bn3fwmumfmv7j"]
 
-[ext_resource type="Texture2D" uid="uid://cbtnwcd2rmn21" path="res://assets/Sprites/Protagonist/Talking frames/Protagonist Neutral + Blink + Yawn_20260806003234 2.PNG" id="1_hhnoj"]
-[ext_resource type="Texture2D" uid="uid://bv431yrskbufc" path="res://assets/Sprites/Protagonist/Talking frames/Protagonist talking_20260806003223 2.PNG" id="2_11gdk"]
-[ext_resource type="Texture2D" uid="uid://dt7nkgutulf1k" path="res://assets/Sprites/Protagonist/Talking frames/Protagonist Neutral + Blink + Yawn_20260806002915 2.PNG" id="3_l7fjo"]
-[ext_resource type="Texture2D" uid="uid://crpht1p6631u5" path="res://assets/Sprites/Protagonist/Idle Frames/Protagonist Neutral + Blink + Yawn_20260806002927 2.PNG" id="4_grbt2"]
-[ext_resource type="Texture2D" uid="uid://g34iuh002gek" path="res://assets/Sprites/Protagonist/Idle Frames/Protagonist Neutral + Blink + Yawn_20260806003223 2.PNG" id="5_kr8va"]
+[ext_resource type="Texture2D" uid="uid://cbtnwcd2rmn21" path="res://assets/Sprites/Protagonist/Talking/Protagonist Neutral + Blink + Yawn_20260806003234 2.PNG" id="1_hhnoj"]
+[ext_resource type="Texture2D" uid="uid://bv431yrskbufc" path="res://assets/Sprites/Protagonist/Talking/Protagonist talking_20260806003223 2.PNG" id="2_11gdk"]
+[ext_resource type="Texture2D" uid="uid://dt7nkgutulf1k" path="res://assets/Sprites/Protagonist/Talking/Protagonist Neutral + Blink + Yawn_20260806002915 2.PNG" id="3_l7fjo"]
+[ext_resource type="Texture2D" uid="uid://crpht1p6631u5" path="res://assets/Sprites/Protagonist/Idle/Protagonist Neutral + Blink + Yawn_20260806002927 2.PNG" id="4_grbt2"]
+[ext_resource type="Texture2D" uid="uid://g34iuh002gek" path="res://assets/Sprites/Protagonist/Idle/Protagonist Neutral + Blink + Yawn_20260806003223 2.PNG" id="5_kr8va"]
 
 [resource]
 animations = [{

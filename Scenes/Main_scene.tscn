@@ -23,21 +23,19 @@ texture = ExtResource("2_rtcas")
 
 [node name="Control" type="Control" parent="CanvasLayer2" unique_id=836549542]
 layout_mode = 3
-anchors_preset = 7
+anchors_preset = 8
 anchor_left = 0.5
-anchor_top = 1.0
+anchor_top = 0.5
 anchor_right = 0.5
-anchor_bottom = 1.0
-offset_left = -20.0
-offset_top = -40.0
-offset_right = 20.0
+anchor_bottom = 0.5
 grow_horizontal = 2
-grow_vertical = 0
+grow_vertical = 2
+size_flags_stretch_ratio = 0.8
 
 [node name="character" parent="CanvasLayer2/Control" unique_id=1701866460 instance=ExtResource("3_c2lxa")]
 unique_name_in_owner = true
-position = Vector2(316, -280.00003)
-scale = Vector2(3.5, 3.5)
+position = Vector2(350.00006, 114.99993)
+scale = Vector2(5.76, 5.76)
 
 [node name="dialog_ui" parent="CanvasLayer2" unique_id=917116363 instance=ExtResource("4_g8hvo")]
 unique_name_in_owner = true
