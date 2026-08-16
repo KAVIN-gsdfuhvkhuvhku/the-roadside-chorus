@@ -1,18 +1,30 @@
-extends Node2D
+class_name Character
+extends Node
 
-@onready var animated_sprite = $AnimatedSprite2D
-
-const CHARACTER_FRAMES = {
-	"You": preload("res://Resources/Protagonist_sprites.tres"),
-	"Grandma": preload("res://Resources/Grandma_sprites.tres")
+enum Name{
+	YOU,
+	GRANDMA,
+	MONTY
 }
-# Called when the node enters the scene tree for the first time.
-func _ready() -> void:
-	pass # Replace with function body.
+
+const CHARACTER_DETAILS: Dictionary = {
+	Name.YOU: {
+		"name": "You",
+		"age": 18,
+		"sprite_frames" : preload("res://Resources/Protagonist_sprites.tres")
+	},
 	
-func change_character(character_name : String, is_talking : bool = true):
-	animated_sprite.sprite_frames = CHARACTER_FRAMES[character_name]
-	if is_talking:
-		animated_sprite.play("talking")
+	Name.GRANDMA: {
+		"name": "Grandma",
+		"age": 68,
+		"sprite_frames" : preload("res://Resources/Grandma_sprites.tres")
+	}
+}
+
+static func get_enum_from_String(String_value: String) -> int:
+	var upper_String = String_value.to_upper()
+	if Name.has(upper_String):
+		return Name[upper_String]
 	else:
-		animated_sprite.play("idle")
+		push_error("Invalid Character name: " + String_value)
+		return -1

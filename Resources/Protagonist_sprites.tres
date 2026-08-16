@@ -26,23 +26,11 @@ animations = [{
 "speed": 5.0
 }, {
 "frames": [{
+"duration": 8.0,
+"texture": ExtResource("5_kr8va")
+}, {
 "duration": 1.0,
 "texture": ExtResource("4_grbt2")
-}, {
-"duration": 1.0,
-"texture": ExtResource("5_kr8va")
-}, {
-"duration": 1.0,
-"texture": ExtResource("5_kr8va")
-}, {
-"duration": 1.0,
-"texture": ExtResource("5_kr8va")
-}, {
-"duration": 1.0,
-"texture": ExtResource("5_kr8va")
-}, {
-"duration": 1.0,
-"texture": ExtResource("5_kr8va")
 }],
 "loop": true,
 "name": &"idle",

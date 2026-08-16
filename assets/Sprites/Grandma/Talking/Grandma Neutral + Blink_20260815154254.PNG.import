@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cdks8fpv656x4"
-path="res://.godot/imported/Grandma Neutral + Blink_20260811063614.PNG-811c51fcdad4ee6d02b700a922eeb82a.ctex"
+uid="uid://bx0aqckkoypt7"
+path="res://.godot/imported/Grandma Neutral + Blink_20260815154254.PNG-8ef4ea69e414732f8a1e3079dd7b277f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Sprites/Grandma/Idle/Grandma Neutral + Blink_20260811063614.PNG"
-dest_files=["res://.godot/imported/Grandma Neutral + Blink_20260811063614.PNG-811c51fcdad4ee6d02b700a922eeb82a.ctex"]
+source_file="res://assets/Sprites/Grandma/Talking/Grandma Neutral + Blink_20260815154254.PNG"
+dest_files=["res://.godot/imported/Grandma Neutral + Blink_20260815154254.PNG-8ef4ea69e414732f8a1e3079dd7b277f.ctex"]
 
 [params]
 
