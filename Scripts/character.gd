@@ -4,7 +4,6 @@ extends Node
 enum Name{
 	YOU,
 	GRANDMA,
-	MONTY
 }
 
 const CHARACTER_DETAILS: Dictionary = {
