@@ -1,25 +1,11 @@
-class_name Character
-extends Node
+#class_name Character
+extends Node2D
+@onready var sprite = $AnimatedSprite2D
 
-enum Name {
-	YOU,
-	GRANDMA,
-}
-
-const CHARACTER_DETAILS: Dictionary = {
-	Name.YOU: {
-		"name": "You",
-		"age": 18,
-		"sprite_frames" : preload("res://Resources/Protagonist_sprites.tres")
-	},
-	
-	Name.GRANDMA: {
-		"name": "Grandma",
-		"age": 68,
-		"sprite_frames" : preload("res://Resources/Grandma_sprites.tres")
+const CHARACTER_FRAMES = {
+	"You" : preload("res://Resources/Protagonist_sprites.tres")
+	"Grandma" : preload("res://Resources/Grandma_sprites.tres")
 	}
-}
-
 
 
 static func get_enum_from_string(string_value: String) -> int:

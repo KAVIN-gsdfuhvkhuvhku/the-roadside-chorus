@@ -33,6 +33,7 @@ grow_vertical = 0
 size_flags_stretch_ratio = 0.8
 
 [node name="Character" parent="CanvasLayer2/Control" unique_id=1802235858 instance=ExtResource("3_c2lxa")]
+unique_name_in_owner = true
 position = Vector2(-6.16, -309.7)
 scale = Vector2(0.34, 0.34)
 
