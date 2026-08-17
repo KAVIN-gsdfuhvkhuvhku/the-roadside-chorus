@@ -38,9 +38,9 @@ func parse_line(line: String):
 func process_current_line():
 	var line = dialog_lines[dialog_index]
 	var line_info = parse_line(line)
-	var character_name = Character.get_enum_from_String(line_info["speaker_name"])
-	dialog_ui.change_line(character_name, line_info["dialog_line"])
-	character.change_character(character_name)
+	#var character_name = Character.get_enum_from_string(line_info["speaker_name"])
+	dialog_ui.change_line(line_info["speaker_name"], line_info["dialog_line"])
+	character.change_character(line_info["speaker_name"])
 
 func _on_text_animation_done():
 	character.play_idle_animation()

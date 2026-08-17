@@ -40,8 +40,7 @@ theme = ExtResource("1_njptv")
 unique_name_in_owner = true
 layout_mode = 2
 bbcode_enabled = true
-text = "
-thuedifh ushdui dsikjci fhiudh shduh dsuhiduh sduihisudhfu thuedifh ushdui udhfiusdhfiu "
+text = "This is an example line of dialogue."
 
 [node name="SpeakerBox" type="PanelContainer" parent="." unique_id=548200346]
 custom_minimum_size = Vector2(200, 60)

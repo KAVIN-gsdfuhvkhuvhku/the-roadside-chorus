@@ -1,7 +1,7 @@
 class_name Character
 extends Node
 
-enum Name{
+enum Name {
 	YOU,
 	GRANDMA,
 }
@@ -20,10 +20,12 @@ const CHARACTER_DETAILS: Dictionary = {
 	}
 }
 
-static func get_enum_from_String(String_value: String) -> int:
-	var upper_String = String_value.to_upper()
-	if Name.has(upper_String):
-		return Name[upper_String]
+
+
+static func get_enum_from_string(string_value: String) -> int:
+	var upper_string = string_value.to_upper()
+	if Name.has(upper_string):
+		return Name[upper_string]
 	else:
-		push_error("Invalid Character name: " + String_value)
+		push_error("Invalid Character name: " + string_value)
 		return -1
