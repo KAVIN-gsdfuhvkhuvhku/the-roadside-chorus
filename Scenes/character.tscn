@@ -6,4 +6,5 @@
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=761440823]
 sprite_frames = ExtResource("1_lkv7d")
-animation = &"talking"
+animation = &"idle"
+frame_progress = 0.816268

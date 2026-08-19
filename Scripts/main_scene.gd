@@ -2,6 +2,7 @@ extends Node2D
 
 @onready var character = %Character
 @onready var dialog_ui = %dialog_ui
+#@onready var character: Character = %Character
 
 var dialog_index: int = 0
 
@@ -20,10 +21,10 @@ func _ready():
 	
 func _input(event):
 	if event.is_action_pressed("next_line"):
-		if dialog_ui.animate_text:
-			dialog_ui.skip_text_animation()
-		else:
-			if dialog_index < len(dialog_lines) - 1:
+		##if dialog_ui.animate_text:
+			##dialog_ui.skip_text_animation()
+		#else:
+		if dialog_index < len(dialog_lines) - 1:
 				dialog_index += 1
 				process_current_line()
 
@@ -40,7 +41,7 @@ func process_current_line():
 	var line_info = parse_line(line)
 	dialog_ui.speaker_name.text = line_info["speaker_name"]
 	dialog_ui.dialog_line.text = line_info["dialog_line"]
-	
+	character.change_character(line_info["speaker_name"])
 	
 #func _on_text_animation_done():
 	#character.play_idle_animation()
