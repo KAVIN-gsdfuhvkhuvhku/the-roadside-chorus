@@ -3,6 +3,8 @@
 [ext_resource type="Theme" uid="uid://1exugx4b1mto" path="res://Resources/new_theme.tres" id="1_njptv"]
 [ext_resource type="FontFile" uid="uid://bww2oh2xqdaih" path="res://assets/Fonts/VT323/VT323-Regular.ttf" id="2_2x5cq"]
 [ext_resource type="Script" uid="uid://cbqeo1t4y32j3" path="res://Scripts/dialog_ui.gd" id="2_yqatb"]
+[ext_resource type="AudioStream" uid="uid://cf3dipmepaoin" path="res://assets/Sounds/audiomass-output.wav" id="3_5t5tq"]
+[ext_resource type="Script" uid="uid://bbsdbdmonkxuk" path="res://Scripts/text_blip_sound.gd" id="3_kymi5"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_v6amk"]
 font = ExtResource("2_2x5cq")
@@ -22,6 +24,11 @@ grow_horizontal = 2
 grow_vertical = 2
 theme = ExtResource("1_njptv")
 script = ExtResource("2_yqatb")
+
+[node name="TextBlipSound" type="AudioStreamPlayer" parent="." unique_id=862112717]
+unique_name_in_owner = true
+stream = ExtResource("3_5t5tq")
+script = ExtResource("3_kymi5")
 
 [node name="DialogBox" type="PanelContainer" parent="." unique_id=1963534806]
 custom_minimum_size = Vector2(0, 150)
