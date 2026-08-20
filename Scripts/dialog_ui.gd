@@ -6,7 +6,7 @@ signal text_animation_done
 @onready var speaker_name = %SpeakerName
 
 const ANIMATION_SPEED : int = 30
-var animate_text : bool = false
+var animate_text : bool = false #to be able to click through the text without having to wait for the typing to stop
 var current_visible_characters : int = 0
 
 
@@ -22,13 +22,13 @@ func _process(delta):
 		else:
 			animate_text = false
 			text_animation_done.emit()
-
+#
 func change_line(speaker: String, line: String):
 	speaker_name.text = speaker
 	current_visible_characters = 0
 	dialog_line.text = line
 	dialog_line.visible_characters = 0
 	animate_text = true
-	
+	#
 func skip_text_animation():
 	dialog_line.visible_ratio = 1
