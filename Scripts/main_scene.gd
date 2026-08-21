@@ -25,19 +25,27 @@ func _input(event):
 					dialog_index += 1
 					process_current_line()
 
-func parse_line(line: String):
-	var line_info = line.split(":")
-	assert(len(line_info) >= 2)
-	return {
-		"speaker_name": line_info[0],
-		"dialog_line": line_info[1]
-	}
+#func parse_line(line: String):
+	#var line_info = line.split(":")
+	#assert(len(line_info) >= 2)
+	#return {
+		#"speaker_name": line_info[0],
+		#"dialog_line": line_info[1]
+	#}
 
 func process_current_line():
 	var line = dialog_lines[dialog_index]
-	var line_info = parse_line(line)
-	var character_name= Character.get_enum_from_string(line_info["speaker_name"])
-	dialog_ui.change_line(character_name, line_info["dialog_line"])
+	
+	#Check if this is a goto command
+	if line.has("goto"):
+		dialog_index = 0
+		process_current_line()
+		return
+	
+	#READING THE CURRENT LINE OF DIALOGUE
+	#var line_info = parse_line(line)
+	var character_name= Character.get_enum_from_string(line["speaker"])
+	dialog_ui.change_line(character_name, line["text"])
 	character_sprite.change_character(character_name)
 	
 func load_dialog(file_path):

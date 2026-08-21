@@ -1,9 +1,18 @@
 [
-	"Grandma: Good morning dear, come eat breakfast!",
-	"You: of course let me grab our bowls",
-	"Grandma: nom nom… By the way dear, congrats on graduating high school! It feels like just yesterday when I dropped you off for your first day….",
-	"You: Thank you, I’m just glad I can relax now~ ",
-	"You: Vowels with Macrons
-	Lowercase ā, ē, ī, ō, ū
-	Uppercase Ā, Ē, Ī, Ō, Ū"
+	{ "speaker": "Grandma", "text": "Good morning dear, come eat breakfast!"},
+	{ "speaker": "You", "text": "Of course let me grab our bowls"},
+	{"goto": "post_choice"},
+	{ "speaker": "Grandma", "text": "nom nom… By the way dear, congrats on graduating high school! It feels like just yesterday when I dropped you off for your first day..."},
+	
+	{ "anchor": "post_choice"},
+	{ "speaker": "You", "text": "I’m just glad I can relax now~"},
+	{ "speaker": "Grandma", "text": "I must say, you’ve been doing great outside of studies as well! I heard you’ve got your full driving license too?"},
+	{ "speaker": "Grandma", "text": "*nudge nudge* LOOK AT MY GRANDDAUGHTER GO! I’m so proud of you dear"},
+	{ "speaker": "You", "text": "aww thanks Grandma, you’re too kind"},
+	{ "speaker": "Grandma", "text": "Well, eat up! Your carrot soup isn't going to finish itself, yknow!"},
+	{ "speaker": "You", "text": "Click bowl until finished!"},
+	{ "speaker": "Grandma", "text": "Okay now that you’re finished, I have a small favour to ask"},
+	{ "speaker": "Grandma", "text": "Can you deliver this to the conservation center? It's a 3 hour road trip from here."},
+	{ "speaker": "You", "text": "Oh that sounds interesting! What's inside the box?"},
 ]
+	
