@@ -34,7 +34,7 @@ size_flags_stretch_ratio = 0.8
 
 [node name="CharacterSprite" parent="CanvasLayer2/Control" unique_id=1802235858 instance=ExtResource("3_6ev3c")]
 unique_name_in_owner = true
-position = Vector2(-6.16, -309.7)
+position = Vector2(-30.29, -309.7)
 scale = Vector2(0.34, 0.34)
 
 [node name="dialog_ui" parent="CanvasLayer2" unique_id=917116363 instance=ExtResource("4_maf8m")]

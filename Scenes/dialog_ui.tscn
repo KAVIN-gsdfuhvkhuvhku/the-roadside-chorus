@@ -25,6 +25,37 @@ grow_vertical = 2
 theme = ExtResource("1_njptv")
 script = ExtResource("2_yqatb")
 
+[node name="ChoicesContainer" type="CenterContainer" parent="." unique_id=466902838]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -301.0
+offset_top = -38.0
+offset_right = 399.0
+offset_bottom = 132.99988
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_njptv")
+
+[node name="ChoiceList" type="VBoxContainer" parent="ChoicesContainer" unique_id=1798762072]
+layout_mode = 2
+theme_override_constants/separation = 7
+
+[node name="Button" type="Button" parent="ChoicesContainer/ChoiceList" unique_id=206688091]
+custom_minimum_size = Vector2(700, 50)
+layout_mode = 2
+theme = ExtResource("1_njptv")
+text = "This is our first choice."
+
+[node name="Button2" type="Button" parent="ChoicesContainer/ChoiceList" unique_id=716480386]
+custom_minimum_size = Vector2(700, 50)
+layout_mode = 2
+theme = ExtResource("1_njptv")
+text = "This is our second choice."
+
 [node name="TextBlipTimer" type="Timer" parent="." unique_id=1267520200]
 unique_name_in_owner = true
 wait_time = 0.481
@@ -87,6 +118,6 @@ grow_vertical = 0
 theme = ExtResource("1_njptv")
 
 [node name="Polygon2D" type="Polygon2D" parent="Control" unique_id=1887292942]
-position = Vector2(-69.000046, -29.000015)
+position = Vector2(-69.000046, -27.000015)
 scale = Vector2(1.0285422, 1.7499992)
 polygon = PackedVector2Array(0, 0, 27.856323, 11.162811, 55, 0, 27, 32, 14.404358, 17.071808)

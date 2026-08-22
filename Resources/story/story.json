@@ -1,10 +1,7 @@
 [
 	{ "speaker": "Grandma", "text": "Good morning dear, come eat breakfast!"},
 	{ "speaker": "You", "text": "Of course let me grab our bowls"},
-	{"goto": "post_choice"},
 	{ "speaker": "Grandma", "text": "nom nom… By the way dear, congrats on graduating high school! It feels like just yesterday when I dropped you off for your first day..."},
-	
-	{ "anchor": "post_choice"},
 	{ "speaker": "You", "text": "I’m just glad I can relax now~"},
 	{ "speaker": "Grandma", "text": "I must say, you’ve been doing great outside of studies as well! I heard you’ve got your full driving license too?"},
 	{ "speaker": "Grandma", "text": "*nudge nudge* LOOK AT MY GRANDDAUGHTER GO! I’m so proud of you dear"},
@@ -12,7 +9,63 @@
 	{ "speaker": "Grandma", "text": "Well, eat up! Your carrot soup isn't going to finish itself, yknow!"},
 	{ "speaker": "You", "text": "Click bowl until finished!"},
 	{ "speaker": "Grandma", "text": "Okay now that you’re finished, I have a small favour to ask"},
-	{ "speaker": "Grandma", "text": "Can you deliver this to the conservation center? It's a 3 hour road trip from here."},
-	{ "speaker": "You", "text": "Oh that sounds interesting! What's inside the box?"},
+	{ "speaker": "Grandma", "text": "Could you take this to the conservation center?"},
+	{ "speaker": "You", "text": "You mean the one next to the wetlands??"},
+	{ "speaker": "Grandma", "text": "Yep that's the one."},
+	{ "speaker": "You", "text": "Isn't that like... three hours away?"},
+	{"choices":
+		[
+			{"text": "First Choice", "goto": "first_choice"},
+			{"text": "Second Choice", "goto": "second_choice"},
+		]
+	},
+	
+	
+	{"anchor": "first_choice"},
+	{ "speaker": "You", "text": "What's even in the box?" },
+	{ "speaker": "Grandma", "text": "A few things the centre needs." },
+	{ "speaker": "You", "text": "Like what?" },
+	{ "speaker": "Grandma", "text": "Some supplies for their wildlife and habitat project." },
+	{ "speaker": "You", "text": "So... you couldn't just send it?" },
+	{ "speaker": "Grandma", "text": "I could." },
+	{ "speaker": "You", "text": "Then why am I driving three hours to deliver it?" },
+	{ "speaker": "Grandma", "text": "*smiles* Because you just got your licence." },
+	{ "speaker": "You", "text": "Grandma..." },
+	{ "speaker": "Grandma", "text": "Consider it your first proper road trip." },
+	{ "speaker": "You", "text": "You planned this, didn't you?" },
+	{ "speaker": "Grandma", "text": "Maybe." },
+	{"goto": "end"},
+	
+	
+	{"anchor": "second_choice"},
+	{ "speaker": "You", "text": "Why do I have to take it?" },
+	{ "speaker": "Grandma", "text": "Because the centre is expecting it today." },
+	{ "speaker": "You", "text": "Couldn't someone else take it?" },
+	{ "speaker": "Grandma", "text": "They could." },
+	{ "speaker": "You", "text": "Then why me?" },
+	{ "speaker": "Grandma", "text": "Because you just got your licence, remember?" },
+	{ "speaker": "You", "text": "Ahhh... so this is secretly a test." },
+	{ "speaker": "Grandma", "text": "Not a test." },
+	{ "speaker": "Grandma", "text": "Just a chance to get used to driving on your own." },
+	{ "speaker": "You", "text": "Three hours doesn't exactly sound like easing me into it..." },
+	{ "speaker": "Grandma", "text": "*laughs* You'll be fine." },
+	{"goto": "end"},
+	
+	
+	{"anchor": "end"},
+	{ "speaker": "Grandma", "text": "Actually, let me grab a couple of things before you go." },
+	{ "speaker": "You", "text": "What else do I need?" },
+	{ "speaker": "Grandma", "text": "A few things for the journey." },
+	{ "speaker": "You", "text": "Okay..." },
+	{ "speaker": "Grandma", "text": "And dear?" },
+	{ "speaker": "You", "text": "Yeah?" },
+	{ "speaker": "Grandma", "text": "Pay attention on the road." },
+	{ "speaker": "You", "text": "You know I always do." },
+	{ "speaker": "Grandma", "text": "I know." },
+	{ "speaker": "Grandma", "text": "But today, try looking a little further than the road ahead of you." },
+	{ "speaker": "You", "text": "...What does that mean?" },
+	{ "speaker": "Grandma", "text": "You'll figure it out." },
+	{ "speaker": "You", "text": "Oh, I almost forgot!" },
+	{ "speaker": "You", "text": "Come on Monty, let's go!" }
 ]
 	

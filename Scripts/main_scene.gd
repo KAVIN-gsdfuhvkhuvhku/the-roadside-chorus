@@ -38,16 +38,36 @@ func process_current_line():
 	
 	#Check if this is a goto command
 	if line.has("goto"):
-		dialog_index = 0
+		dialog_index = get_anchor_position(line["goto"])
 		process_current_line()
 		return
 	
-	#READING THE CURRENT LINE OF DIALOGUE
-	#var line_info = parse_line(line)
-	var character_name= Character.get_enum_from_string(line["speaker"])
-	dialog_ui.change_line(character_name, line["text"])
-	character_sprite.change_character(character_name)
+	#check if this is just a anchor declaration, which isnt displayable content
+	if line.has("anchor"):
+		dialog_index += 1
+		process_current_line()
+		return
 	
+	if line.has("choices"):
+		pass
+	else:
+		#READING THE CURRENT LINE OF DIALOGUE
+		#var line_info = parse_line(line)
+		var character_name= Character.get_enum_from_string(line["speaker"])
+		dialog_ui.change_line(character_name, line["text"])
+		character_sprite.change_character(character_name)
+	
+
+func get_anchor_position(anchor: String):
+	#find the anchor with the matching name
+	for i in range(dialog_lines.size()):
+		if dialog_lines[i].has("anchor") and dialog_lines[i]["anchor"] == anchor:
+			return i
+			
+	#if the anchor wasn't found:
+	printerr("Error: Could not find anchor '" + anchor + "'")
+	return null
+
 func load_dialog(file_path):
 	#CHECK IF THE FILE EXISTS
 	if not FileAccess.file_exists(file_path):
