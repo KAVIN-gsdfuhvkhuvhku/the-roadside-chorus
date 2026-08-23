@@ -1,15 +1,44 @@
 [gd_resource type="SpriteFrames" format=3 uid="uid://b5qdmxq2jsmht"]
 
+[ext_resource type="Texture2D" uid="uid://dcmf21pq8lefl" path="res://assets/Sprites/Grandma/Box/Grandma Neutral + Blink2_20260823190823.PNG" id="1_5bfq6"]
 [ext_resource type="Texture2D" uid="uid://dqcrkma2wg4ff" path="res://assets/Sprites/Grandma/Idle/Grandma Neutral + Blink_20260815154208.PNG" id="1_mexye"]
 [ext_resource type="Texture2D" uid="uid://cd241e6i6oi60" path="res://assets/Sprites/Grandma/Idle/Grandma Neutral + Blink_20260815154216.PNG" id="2_ffhyo"]
 [ext_resource type="Texture2D" uid="uid://dy75wcnceprs3" path="res://assets/Sprites/Grandma/Talking/Grandma Neutral + Blink_20260815154225.PNG" id="3_6x2sa"]
 [ext_resource type="Texture2D" uid="uid://bx0aqckkoypt7" path="res://assets/Sprites/Grandma/Talking/Grandma Neutral + Blink_20260815154254.PNG" id="4_42g1j"]
 [ext_resource type="Texture2D" uid="uid://xqituul5t1jq" path="res://assets/Sprites/Grandma/Talking/Grandma Neutral + Blink_20260815154249.PNG" id="5_sypm5"]
+[ext_resource type="Texture2D" uid="uid://dddwgdhxm5lyj" path="res://assets/Sprites/Grandma/Box/Grandma Neutral + Blink2_20260823190827.PNG" id="6_1xnly"]
 [ext_resource type="Texture2D" uid="uid://dpe40wgnhptqw" path="res://assets/Sprites/Grandma/Talking/Grandma Neutral + Blink_20260815154239.PNG" id="6_kb3ct"]
+[ext_resource type="Texture2D" uid="uid://bxb26nlcqga0g" path="res://assets/Sprites/Grandma/Box/Grandma Neutral + Blink2_20260823190835.PNG" id="7_4q3wf"]
 [ext_resource type="Texture2D" uid="uid://doy0fs1q8rudm" path="res://assets/Sprites/Grandma/Talking/Grandma Neutral + Blink_20260815154233.PNG" id="7_doebp"]
+[ext_resource type="Texture2D" uid="uid://buoyeyyxnbv1d" path="res://assets/Sprites/Grandma/Box/Grandma Neutral + Blink2_20260823190831.PNG" id="8_grbg4"]
 
 [resource]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_5bfq6")
+}],
+"loop": true,
+"name": &"box-idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_1xnly")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_4q3wf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_grbg4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_5bfq6")
+}],
+"loop": true,
+"name": &"box-smile",
+"speed": 5.0
+}, {
 "frames": [{
 "duration": 7.0,
 "texture": ExtResource("1_mexye")

@@ -7,7 +7,7 @@
 	{ "speaker": "Grandma", "text": "*nudge nudge* LOOK AT MY GRANDDAUGHTER GO! I’m so proud of you dear"},
 	{ "speaker": "You", "text": "aww thanks Grandma, you’re too kind"},
 	{ "speaker": "Grandma", "text": "Well, eat up! Your carrot soup isn't going to finish itself, yknow!"},
-	{ "speaker": "You", "text": "Click bowl until finished!"},
+	{ "speaker": "You", "text": "nom nom nom. nom nom.", "expression": "Eating"},
 	{ "speaker": "Grandma", "text": "Okay now that you’re finished, I have a small favour to ask"},
 	{ "speaker": "Grandma", "text": "Could you take this to the conservation center?"},
 	{ "speaker": "You", "text": "You mean the one next to the wetlands??"},
@@ -15,8 +15,8 @@
 	{ "speaker": "You", "text": "Isn't that like... three hours away?"},
 	{"choices":
 		[
-			{"text": "First Choice", "goto": "first_choice"},
-			{"text": "Second Choice", "goto": "second_choice"},
+			{"text": "What's inside the box??", "goto": "first_choice"},
+			{"text": "Wait why do I have to go??", "goto": "second_choice"},
 		]
 	},
 	
@@ -67,5 +67,5 @@
 	{ "speaker": "Grandma", "text": "You'll figure it out." },
 	{ "speaker": "You", "text": "Oh, I almost forgot!" },
 	{ "speaker": "You", "text": "Come on Monty, let's go!" }
-]
 	
+]

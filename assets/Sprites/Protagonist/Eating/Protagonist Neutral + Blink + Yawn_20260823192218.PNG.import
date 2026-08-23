@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://0yckodic8a6l"
-path="res://.godot/imported/bedroom_background.png-df9c3de93eee86baefa1fbe1e14da594.ctex"
+uid="uid://pdk25oxdvxgr"
+path="res://.godot/imported/Protagonist Neutral + Blink + Yawn_20260823192218.PNG-e3e7bec107fb1c5a3dbde65daf8d9455.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Images/bedroom_background.png"
-dest_files=["res://.godot/imported/bedroom_background.png-df9c3de93eee86baefa1fbe1e14da594.ctex"]
+source_file="res://assets/Sprites/Protagonist/Eating/Protagonist Neutral + Blink + Yawn_20260823192218.PNG"
+dest_files=["res://.godot/imported/Protagonist Neutral + Blink + Yawn_20260823192218.PNG-e3e7bec107fb1c5a3dbde65daf8d9455.ctex"]
 
 [params]
 

@@ -7,6 +7,6 @@
 script = ExtResource("1_ushfy")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=761440823]
+position = Vector2(0, -4)
 sprite_frames = ExtResource("1_lkv7d")
-animation = &"idle"
-frame_progress = 0.1381485
+animation = &"eating"

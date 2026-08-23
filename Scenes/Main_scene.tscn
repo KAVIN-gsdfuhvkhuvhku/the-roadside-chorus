@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://be2gupdr5mp76"]
 
 [ext_resource type="Script" uid="uid://cwoog0bic8cds" path="res://Scripts/main_scene.gd" id="1_x6ack"]
-[ext_resource type="Texture2D" uid="uid://0yckodic8a6l" path="res://assets/Images/bedroom_background.png" id="2_iacmt"]
+[ext_resource type="Texture2D" uid="uid://0yckodic8a6l" path="res://assets/Images/Kitchen.png" id="2_iacmt"]
 [ext_resource type="PackedScene" uid="uid://dbsfbb5piu54a" path="res://Scenes/character.tscn" id="3_6ev3c"]
 [ext_resource type="PackedScene" uid="uid://cs85hmukq2cs4" path="res://Scenes/dialog_ui.tscn" id="4_maf8m"]
 
@@ -34,7 +34,7 @@ size_flags_stretch_ratio = 0.8
 
 [node name="CharacterSprite" parent="CanvasLayer2/Control" unique_id=1802235858 instance=ExtResource("3_6ev3c")]
 unique_name_in_owner = true
-position = Vector2(-30.29, -309.7)
+position = Vector2(-18.59, -303.59)
 scale = Vector2(0.34, 0.34)
 
 [node name="dialog_ui" parent="CanvasLayer2" unique_id=917116363 instance=ExtResource("4_maf8m")]
