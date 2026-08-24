@@ -11,6 +11,15 @@ var dialog_index: int = 0
 var dialog_lines: Array = []
 
 func _ready():
+	if has_node("/root/GameState"):
+		var game_state = get_node("/root/GameState")
+		if game_state.return_story_dialog_file != "":
+			dialog_file = game_state.return_story_dialog_file
+			game_state.return_story_dialog_file = ""
+		elif dialog_file == "res://Resources/story/first_scene.json":
+			# Fresh story run: allow Habitat to launch again after seventh scene.
+			game_state.habitat_completed = false
+
 	#load dialogue
 	dialog_lines = load_dialog(dialog_file)
 	dialog_index = 0
@@ -148,7 +157,15 @@ func _on_transition_out_completed():
 			dialog_index =+ 1
 		SceneManager.transition_in(transition_effect)
 	else:
-		print("You've finished the game!")
+		var should_launch_habitat = true
+		if has_node("/root/GameState"):
+			should_launch_habitat = !get_node("/root/GameState").habitat_completed
+
+		if should_launch_habitat:
+			get_tree().change_scene_to_file("res://Imported/HabitatFragmentation/Scenes/start_menu.tscn")
+			SceneManager.transition_in()
+		else:
+			print("You've finished the game!")
 	
 func _on_transition_in_completed():
 	#Start processing the dialogue
