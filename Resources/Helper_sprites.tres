@@ -1,0 +1,35 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://b21o2vyt85250"]
+
+[ext_resource type="Texture2D" uid="uid://o3pvk06o5e4q" path="res://assets/Sprites/Helper/Grandma Neutral + Blink_20260824231227.PNG" id="1_2smrp"]
+[ext_resource type="Texture2D" uid="uid://0ecma2m1swxa" path="res://assets/Sprites/Helper/Grandma Neutral + Blink_20260824231223.PNG" id="2_7p7ga"]
+[ext_resource type="Texture2D" uid="uid://defyqi3o1sjmi" path="res://assets/Sprites/Helper/Grandma Neutral + Blink_20260824231210.PNG" id="3_faib3"]
+[ext_resource type="Texture2D" uid="uid://nya0km3mrgy6" path="res://assets/Sprites/Helper/Grandma Neutral + Blink_20260824231214.PNG" id="4_x04iv"]
+[ext_resource type="Texture2D" uid="uid://duggqp1bu5yfo" path="res://assets/Sprites/Helper/Grandma Neutral + Blink_20260824231219.PNG" id="5_65tti"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 5.0,
+"texture": ExtResource("1_2smrp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_7p7ga")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_faib3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_x04iv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_65tti")
+}],
+"loop": true,
+"name": &"talking",
+"speed": 5.0
+}]

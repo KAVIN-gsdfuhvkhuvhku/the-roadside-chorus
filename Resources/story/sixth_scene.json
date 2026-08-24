@@ -1,0 +1,61 @@
+[
+{"location": "forest"},
+
+{ "speaker": "Narrator", "text": "You push through the bushes, following the hedgehog deeper into the forest." },
+{ "speaker": "You", "text": "Where did it go?" },
+
+{ "speaker": "Narrator", "text": "The forest is strangely quiet. You look around, trying to spot the hedgehog." },
+{ "speaker": "You", "text": "Hello?" },
+
+{ "speaker": "Tui", "text": "Looking for someone?" },
+{ "speaker": "You", "text": "AH! What the heck where did that come from??" },
+
+{ "speaker": "Narrator", "text": "You look up and see a tūī sitting on a branch above you." },
+{ "speaker": "You", "text": "You... you can talk??" },
+
+{ "speaker": "Tui", "text": "Of course I can talk." },
+{ "speaker": "You", "text": "No. Birds don't talk." },
+
+{ "speaker": "Tui", "text": "And yet, here we are." },
+{ "speaker": "You", "text": "...Right." },
+
+{ "speaker": "Tui", "text": "You were following the hedgehog, weren't you?" },
+{ "speaker": "You", "text": "Yeah. It ran across the road." },
+
+{ "speaker": "Tui", "text": "It was trying to get to the other side." },
+{ "speaker": "You", "text": "Why didn't it just stay in the forest?" },
+
+{ "speaker": "Tui", "text": "Because the road cuts straight through its home." },
+{ "speaker": "You", "text": "So it had to cross the road?" },
+
+{ "speaker": "Tui", "text": "Exactly." },
+{ "speaker": "Tui", "text": "When roads, buildings, and other things split up an animal's habitat, we call it habitat fragmentation." },
+
+{ "speaker": "You", "text": "So the road is basically separating the forest?" },
+
+{ "speaker": "Tui", "text": "Yes. And that can make it harder for animals to find food, shelter, and each other." },
+{ "speaker": "You", "text": "I never really thought about it like that." },
+
+{ "speaker": "Tui", "text": "Most people don't." },
+{ "speaker": "Tui", "text": "They see a road. We see something standing between us and where we need to go." },
+
+{ "speaker": "You", "text": "So that's why I keep seeing animals crossing?" },
+
+{ "speaker": "Tui", "text": "Partly." },
+{ "speaker": "Tui", "text": "The road doesn't just affect one animal. It affects everything living around it." },
+
+{ "speaker": "You", "text": "Then... what am I supposed to do?" },
+
+{ "speaker": "Tui", "text": "Pay attention." },
+{ "speaker": "Tui", "text": "Slow down. Look out for animals. And remember that the road is passing through their home too." },
+
+{ "speaker": "You", "text": "I guess I'll have to keep my eyes open." },
+
+{ "speaker": "Tui", "text": "That's a good start." },
+
+{ "speaker": "Tui", "animation": "flight" },
+{ "speaker": "Narrator", "text": "The tūī suddenly spreads its wings and flies deeper into the forest." },
+{ "speaker": "You", "text": "Wait! Where are you going?" },
+
+{"next_scene": "seventh_scene", "transition": "fade"}
+]

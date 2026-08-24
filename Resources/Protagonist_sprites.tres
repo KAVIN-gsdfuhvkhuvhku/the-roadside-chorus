@@ -15,6 +15,14 @@
 [ext_resource type="Texture2D" uid="uid://dj0rl5r2x5cdk" path="res://assets/Sprites/Protagonist/Eating/Protagonist Neutral + Blink + Yawn_20260823192241.PNG" id="9_rcr0p"]
 [ext_resource type="Texture2D" uid="uid://btmhr6fb3q7tm" path="res://assets/Sprites/Protagonist/Eating/Protagonist Neutral + Blink + Yawn_20260823192251.PNG" id="10_epcsk"]
 [ext_resource type="Texture2D" uid="uid://dso0k3ieaca3v" path="res://assets/Sprites/Protagonist/Eating/Protagonist Neutral + Blink + Yawn_20260823192256.PNG" id="11_oa386"]
+[ext_resource type="Texture2D" uid="uid://bid0w7in2lnoi" path="res://assets/Sprites/Protagonist/Eating/Protagonist Neutral + Blink + Yawn_20260824212340.PNG" id="12_ln5l1"]
+[ext_resource type="Texture2D" uid="uid://cg30xcmrdqiob" path="res://assets/Sprites/Protagonist/Eating/Protagonist Neutral + Blink + Yawn_20260824212330.PNG" id="13_mgxx7"]
+[ext_resource type="Texture2D" uid="uid://c4efdmhee6fwo" path="res://assets/Sprites/Protagonist/Wokeup/Protagonist Neutral + Blink + Yawn_20260824212236.PNG" id="14_u45ec"]
+[ext_resource type="Texture2D" uid="uid://btxwlttqejvso" path="res://assets/Sprites/Protagonist/Wokeup/Protagonist Neutral + Blink + Yawn_20260824212249.PNG" id="15_ucjn0"]
+[ext_resource type="Texture2D" uid="uid://kokvald60bov" path="res://assets/Sprites/Protagonist/Wokeup/Protagonist Neutral + Blink + Yawn_20260824212253.PNG" id="16_rcr0p"]
+[ext_resource type="Texture2D" uid="uid://cleujtmooqoa0" path="res://assets/Sprites/Protagonist/Wokeup/Protagonist Neutral + Blink + Yawn_20260824212305.PNG" id="17_epcsk"]
+[ext_resource type="Texture2D" uid="uid://cwd4lgnsdo6xd" path="res://assets/Sprites/Protagonist/Wokeup/Protagonist Neutral + Blink + Yawn_20260824212310.PNG" id="18_rcr0p"]
+[ext_resource type="Texture2D" uid="uid://c7juw7fb6ltf0" path="res://assets/Sprites/Protagonist/Wokeup/Protagonist Neutral + Blink + Yawn_20260824212315.PNG" id="19_epcsk"]
 
 [resource]
 animations = [{
@@ -95,8 +103,11 @@ animations = [{
 "speed": 5.0
 }, {
 "frames": [{
-"duration": 1.3,
+"duration": 5.0,
 "texture": ExtResource("11_oa386")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_ln5l1")
 }],
 "loop": true,
 "name": &"Sitting-idle",
@@ -105,9 +116,66 @@ animations = [{
 "frames": [{
 "duration": 1.0,
 "texture": ExtResource("11_oa386")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_mgxx7")
 }],
 "loop": true,
 "name": &"Sitting-talking",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 5.0,
+"texture": ExtResource("14_u45ec")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_ucjn0")
+}],
+"loop": true,
+"name": &"Wakeup-idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("16_rcr0p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_epcsk")
+}],
+"loop": true,
+"name": &"Wakeup-talking",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 5.0,
+"texture": ExtResource("18_rcr0p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_epcsk")
+}],
+"loop": true,
+"name": &"Yawn-idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 5.0,
+"texture": ExtResource("18_rcr0p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_epcsk")
+}],
+"loop": true,
+"name": &"Yawn-talking",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"hide-idle",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"hide-talking",
 "speed": 5.0
 }, {
 "frames": [{

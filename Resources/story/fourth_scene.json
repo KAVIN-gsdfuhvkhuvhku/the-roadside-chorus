@@ -1,0 +1,39 @@
+[
+	{"location": "protag_drive_pov"},
+	{"speaker": "Narrator", "text": "You set off on your journey... The first half an hour go by relatively peaceful"},
+	
+	{ "speaker": "You", "text": "Okay... first proper drive on my own."},
+	{ "speaker": "Monty", "text": "Woof!" },
+	{ "speaker": "You", "text": "Haha, you're excited too, aren't you?"},
+	{ "speaker": "Narrator", "text": "The road winds through the hills, with forests and ocean stretching outwards." },
+	{ "speaker": "You", "text": "It's actually really pretty out here."},
+
+
+	{ "speaker": "Narrator", "text": "Suddenly, something steps onto the road." },
+	{"location": "road_pukeko1"},
+	{ "speaker": "You", "text": "Wait... is that a pūkeko?"},
+	{"location": "road_pukeko2"},
+	{ "speaker": "Narrator", "text": "The pūkeko moves further onto the road." },
+	{ "speaker": "You", "text": "Oh no!"},
+	{ "speaker": "Narrator", "text": "Time seems to slow." },
+	{ "speaker": "You", "text": "...Huh?"},
+	{ "speaker": "Narrator", "text": "For a moment, the sound of the engine fades." },
+	{ "speaker": "You", "text": "That's... strange."},
+
+	{ "speaker": "Narrator", "text": "A faint melody drifts through the air." },
+	{"location": "road_pukeko3"},
+	{ "speaker": "You", "text": "Am I hearing music?"},
+
+	{ "speaker": "Narrator", "text": "The pūkeko looks towards the car before quickly running into the roadside brush." },
+	{ "speaker": "You", "text": "Are you okay?"},
+
+	{ "speaker": "Narrator", "text": "The pūkeko disappears into the vegetation." },
+	{"location": "protag_drive_pov"},
+	{ "speaker": "You", "text": "I think it's fine..."},
+	{ "speaker": "You", "text": "That was way too close."},
+
+	{ "speaker": "Narrator", "text": "The sound of the engine returns."},
+	{ "speaker": "You", "text": "Okay. I'll pay more attention."},
+
+	{"next_scene": "fifth_scene", "transition": "fade"}
+]

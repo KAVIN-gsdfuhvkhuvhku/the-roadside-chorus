@@ -1,39 +1,68 @@
 [
-	{ "location": "Outside-house", "music": "Outside-house-theme" },
+	{"location": "Kitchen", "music": "Kitchen_theme"},
 	
-	{ "speaker": "You", "text": "*Here we go*"},
-	{ "speaker": "Grandma", "text": "Alright dear, I think that's everything. Ready to go?", "expression": "box" },
-	{ "speaker": "You", "text": "I think so. It's a little weird knowing I'm driving on my own now."},
-	{ "speaker": "Grandma", "text": "You'll be fine.", "expression": "box"},
+	{ "speaker": "You", "text": "Gooooooooodmorning" },
+	{ "speaker": "Grandma", "text": "Good morning dear, come eat breakfast!" },
+	{ "speaker": "You", "text": "Of course! Let me grab our bowls." },
 	
+	{ "speaker": "Grandma", "text": "Nom nom… By the way dear, congrats on graduating high school! It feels like just yesterday when I dropped you off for your first day..." },
+	{ "speaker": "You", "text": "I'm just glad I can relax now~" },
+	
+	{ "speaker": "Grandma", "text": "I must say, you've been doing great outside of studies as well! I heard you've got your full driving licence too?" },
+	{ "speaker": "Grandma", "text": "*nudge nudge* LOOK AT MY GRANDDAUGHTER GO! I'm so proud of you dear." },
+	{ "speaker": "You", "text": "Aww, thanks Grandma. You're too kind." },
+	
+	{ "speaker": "Grandma", "text": "Well, eat up! Your carrot soup isn't going to finish itself, y'know!" },
+	{ "speaker": "You", "text": "Nom nom nom. Nom nom.", "expression": "Eating" },
+	
+	{ "speaker": "Grandma", "text": "Okay, now that you're finished, I have a small favour to ask." },
+	{ "speaker": "Grandma", "text": "Could you take this for me?", "expression": "box" },
+	{ "speaker": "You", "text": "...Grandma.", "expression": "Sitting" },
+	{ "speaker": "You", "text": "What is that?" , "expression": "Sitting" },
+	{ "speaker": "Grandma", "text": "A box." , "expression": "box" },
+	{ "speaker": "You", "text": "I can see that. Why is it so huge?" , "expression": "Sitting" },
+	{ "speaker": "Grandma", "text": "It has a few things the conservation centre needs." , "expression": "box" },
+	{ "speaker": "You", "text": "Wait, conservation centre?" , "expression": "Sitting" },
+	{ "speaker": "Grandma", "text": "Yep." , "expression": "box" },
+	{ "speaker": "You", "text": "Where is it?" , "expression": "Sitting" },
+	{ "speaker": "Grandma", "text": "The one next to the forest." , "expression": "box" },
+	{ "speaker": "You", "text": "Isn't that like... three hours away?" , "expression": "Sitting" },
+	{ "speaker": "Grandma", "text": "Young lady, put your dishes away and ask your questions after." , "expression": "box" },
+	{ "speaker": "You", "text": "okay, okay I'm done" },
 	{
 		"choices":
 		[
-			{ "text": "I'll be careful.", "goto": "careful" },
-			{ "text": "I know, Grandma.", "goto": "confident" }
+			{"text": "What's actually inside this thing?", "goto": "first_choice"},
+			{"text": "Wait, why do I have to take it?", "goto": "second_choice"}
 		]
 	},
 	
-	{ "anchor": "careful" },
-	{ "speaker": "You", "text": "I know, Grandma. I'll be careful."},
-	{ "speaker": "Grandma", "text": "Good. Take this box and have a safe trip, dear." },
-	{ "goto": "end" },
+	{"anchor": "first_choice"},
+	{ "speaker": "You", "text": "What's actually inside this thing?"},
+	{ "speaker": "Grandma", "text": "Some supplies for their wildlife and habitat project.", "expression": "box" },
+	{ "speaker": "You", "text": "And you want me to drive three hours to deliver it?"},
+	{ "speaker": "Grandma", "text": "I thought you might enjoy the drive.", "expression": "box" },
+	{ "speaker": "You", "text": "Grandma..."},
+	{ "speaker": "Grandma", "text": "Consider it your first proper road trip.", "expression": "box" },
+	{ "speaker": "You", "text": "You planned this, didn't you?"},
+	{ "speaker": "Grandma", "text": "Maybe.", "expression": "box" },
+	{"goto": "end"},
 	
-	{ "anchor": "confident" },
-	{ "speaker": "You", "text": "I'll be back before you know it!"},
-	{ "speaker": "Grandma", "text": "Good. Take this box and have a safe trip, dear." },
+	{"anchor": "second_choice"},
+	{ "speaker": "You", "text": "Wait, why do I have to take it?"},
+	{ "speaker": "Grandma", "text": "Because the centre is expecting it today.", "expression": "box" },
+	{ "speaker": "You", "text": "Couldn't someone else take it?"},
+	{ "speaker": "Grandma", "text": "They could.", "expression": "box" },
+	{ "speaker": "You", "text": "Then why me?"},
+	{ "speaker": "Grandma", "text": "Because you just got your licence, remember?", "expression": "box" },
+	{ "speaker": "You", "text": "Ahhh... so this is secretly a test."},
+	{ "speaker": "Grandma", "text": "Not a test. Just a chance to get used to driving on your own.", "expression": "box" },
+	{ "speaker": "You", "text": "Three hours doesn't exactly sound like easing me into it..."},
+	{ "speaker": "Grandma", "text": "*laughs* You'll be fine.", "expression": "box" },
+	{"goto": "end"},
 	
-	{ "goto": "end" },
-	
-	{ "anchor": "end" },
-	{ "speaker": "You", "text": "See you later, Grandma!" },
-	{ "speaker": "Grandma", "text": "And dear?" },
-	{ "speaker": "You", "text": "Yeah?" },
-	{ "speaker": "Grandma", "text": "Pay attention on the road." },
-	{ "speaker": "You", "text": "You know I always do." },
-	{ "speaker": "Grandma", "text": "I know." },
-	{ "speaker": "Grandma", "text": "But today, try looking a little further than the road ahead of you." },
-	{ "speaker": "You", "text": "...What does that mean?" },
-	{ "speaker": "Grandma", "text": "You'll figure it out." },
-	{ "next_scene": "", "transition": "fade" }
+	{"anchor": "end"},
+	{ "speaker": "You", "text": "Alright... I guess I'm going on a road trip." },
+	{ "speaker": "You", "text": "Come on, Monty. Let's go!" },
+	{"next_scene": "third_scene", "transition": "slide"}
 ]

@@ -1,0 +1,40 @@
+[
+	{ "location": "Outside-house", "music": "Outside-house-theme" },
+	
+	{ "speaker": "You", "text": "*Here we go*"},
+	{ "speaker": "Grandma", "text": "Alright dear, I think that's everything. Ready to go?", "expression": "box" },
+	{ "speaker": "You", "text": "I think so. It's a little weird knowing I'm driving on my own now."},
+	{ "speaker": "Grandma", "text": "You'll be fine.", "expression": "box"},
+	
+	{
+		"choices":
+		[
+			{ "text": "I'll be careful.", "goto": "careful" },
+			{ "text": "I know, Grandma.", "goto": "confident" }
+		]
+	},
+	
+	{ "anchor": "careful" },
+	{ "speaker": "You", "text": "I know, Grandma. I'll be careful."},
+	{ "speaker": "Grandma", "text": "Good. Take this box and have a safe trip, dear." },
+	{ "goto": "end" },
+	
+	{ "anchor": "confident" },
+	{ "speaker": "You", "text": "I'll be back before you know it!"},
+	{ "speaker": "Grandma", "text": "Good. Take this box and have a safe trip, dear." },
+	
+	{ "goto": "end" },
+	
+	{ "anchor": "end" },
+	{ "speaker": "You", "text": "See you later, Grandma!" },
+	{ "speaker": "Grandma", "text": "And dear?" },
+	{ "speaker": "You", "text": "Yeah?" },
+	{ "speaker": "Grandma", "text": "Pay attention on the road." },
+	{ "speaker": "You", "text": "You know I always do." },
+	{ "speaker": "Grandma", "text": "I know." },
+	{ "speaker": "Grandma", "text": "But today, try looking a little further than the road ahead of you." },
+	{ "speaker": "You", "text": "...What does that mean?" },
+	{ "speaker": "Grandma", "text": "You'll figure it out." },
+	
+	{ "next_scene": "fourth_scene", "transition": "fade" }
+]

@@ -1,64 +1,40 @@
 [
-	{"location": "Kitchen", "music": "Kitchen_theme"},
-	{ "speaker": "Grandma", "text": "Good morning dear, come eat breakfast!"},
-	{ "speaker": "You", "text": "Of course let me grab our bowls"},
-	{ "speaker": "Grandma", "text": "nom nom… By the way dear, congrats on graduating high school! It feels like just yesterday when I dropped you off for your first day..."},
-	{ "speaker": "You", "text": "I’m just glad I can relax now~"},
-	{ "speaker": "Grandma", "text": "I must say, you’ve been doing great outside of studies as well! I heard you’ve got your full driving license too?"},
-	{ "speaker": "Grandma", "text": "*nudge nudge* LOOK AT MY GRANDDAUGHTER GO! I’m so proud of you dear"},
-	{ "speaker": "You", "text": "aww thanks Grandma, you’re too kind"},
-	{ "speaker": "Grandma", "text": "Well, eat up! Your carrot soup isn't going to finish itself, yknow!"},
-	{ "speaker": "You", "text": "nom nom nom. nom nom.", "expression": "Eating"},
-	{ "speaker": "Grandma", "text": "Okay now that you’re finished, I have a small favour to ask"},
-	{ "speaker": "Grandma", "text": "Could you take this to the conservation center?", "expression": "box"},
-	{ "speaker": "You", "text": "You mean the one next to the wetlands??", "expression": "Sitting"},
-	{ "speaker": "Grandma", "text": "Yep that's the one.", "expression": "box"},
-	{ "speaker": "You", "text": "Isn't that like... three hours away?", "expression": "Sitting"},
-	{"choices":
+	{ "location": "Bedroom" },
+
+	{ "speaker": "Narrator", "text": "Morning light shines through the curtains. Today feels a little different." },
+	{ "speaker": "You", "text": "Mmm... morning already?", "expression": "Wakeup"},
+	{ "speaker": "You", "text": "Yawn...", "expression": "Yawn"},
+	{ "speaker": "You", "text": "Wait...", "expression": "Wakeup"},
+	{ "speaker": "You", "text": "I'M FINALLY DONE WITH HIGH SCHOOL!", "expression": "Wakeup"},
+	{ "speaker": "Monty", "text": "Woof! Woof! Woof!!!!" },
+	{ "speaker": "You", "text": "Haha, morning to you too, Monty.",  "expression": "Wakeup"},
+	{ "speaker": "You", "text": "No more homework. No more exams. No more waking up early for school.", "expression": "Wakeup"},
+
+	{
+		"choices":
 		[
-			{"text": "What's inside the box??", "goto": "first_choice"},
-			{"text": "Wait why do I have to go??", "goto": "second_choice"},
+			{ "text": "Celebrate with Monty.", "goto": "celebrate" },
+			{ "text": "Get ready for the day.", "goto": "get_ready" }
 		]
 	},
-	
-	
-	{"anchor": "first_choice"},
-	{ "speaker": "You", "text": "What's even in the box?", "expression": "Sitting"},
-	{ "speaker": "Grandma", "text": "A few things the centre needs.", "expression": "box"},
-	{ "speaker": "You", "text": "Like what?", "expression": "Sitting"},
-	{ "speaker": "Grandma", "text": "Some supplies for their wildlife and habitat project.", "expression": "box"},
-	{ "speaker": "You", "text": "So... you couldn't just send it?", "expression": "Sitting"},
-	{ "speaker": "Grandma", "text": "I could.", "expression": "box"},
-	{ "speaker": "You", "text": "Then why am I driving three hours to deliver it?", "expression": "Sitting"},
-	{ "speaker": "Grandma", "text": "*smiles* Because you just got your licence.", "expression": "box"},
-	{ "speaker": "You", "text": "Grandma...", "expression": "Sitting"},
-	{ "speaker": "Grandma", "text": "Consider it your first proper road trip.", "expression": "box"},
-	{ "speaker": "You", "text": "You planned this, didn't you?", "expression": "Sitting"},
-	{ "speaker": "Grandma", "text": "Maybe.", "expression": "box"},
-	{"goto": "end"},
-	
-	
-	{"anchor": "second_choice"},
-	{ "speaker": "You", "text": "Why do I have to take it?", "expression": "Sitting"},
-	{ "speaker": "Grandma", "text": "Because the centre is expecting it today.", "expression": "box"},
-	{ "speaker": "You", "text": "Couldn't someone else take it?", "expression": "Sitting"},
-	{ "speaker": "Grandma", "text": "They could.", "expression": "box"},
-	{ "speaker": "You", "text": "Then why me?", "expression": "Sitting"},
-	{ "speaker": "Grandma", "text": "Because you just got your licence, remember?", "expression": "box"},
-	{ "speaker": "You", "text": "Ahhh... so this is secretly a test.", "expression": "Sitting"},
-	{ "speaker": "Grandma", "text": "Not a test.", "expression": "box"},
-	{ "speaker": "Grandma", "text": "Just a chance to get used to driving on your own.", "expression": "box"},
-	{ "speaker": "You", "text": "Three hours doesn't exactly sound like easing me into it...", "expression": "Sitting"},
-	{ "speaker": "Grandma", "text": "*laughs* You'll be fine.", "expression": "box"},
-	{"goto": "end"},
-	
-	
-	{"anchor": "end"},
-	{ "speaker": "Grandma", "text": "Actually, let me grab a couple of things before you go." },
-	{ "speaker": "You", "text": "What else do I need?" },
-	{ "speaker": "Grandma", "text": "A few things for the journey. Here you go" },
-	{ "speaker": "You", "text": "Oh, I almost forgot!" },
-	{ "speaker": "You", "text": "Come on Monty, let's go!" },
-	{"next_scene": "second_scene", "transition": "slide"}
-	
+
+	{ "anchor": "celebrate" },
+	{ "speaker": "You", "text": "Come here, Monty!", "expression": "Wakeup"},
+	{ "speaker": "You", "text": "Who's ready to celebrate?", "expression": "Wakeup"},
+	{ "speaker": "Monty", "text": "Wurf woof woof! WOOF!" },
+	{ "speaker": "You", "text": "That's what I thought. Party!", "expression": "Wakeup"},
+	{ "speaker": "Monty", "text": "woof woof woof.. woof" },
+	{ "speaker": "You", "text": "You're right, who parties in pajamas... Give me a second to change.", "expression": "Wakeup"},
+	{ "speaker": "You", "text": "There we go!"},
+	{ "goto": "end" },
+
+	{ "anchor": "get_ready" },
+	{ "speaker": "You", "text": "Alright, first day of freedom. Let's make it count.",},
+	{ "speaker": "Monty", "text": "Woof!"},
+	{ "speaker": "You", "text": "And you too, Monty."},
+	{ "goto": "end" },
+
+	{ "anchor": "end" },
+	{ "speaker": "You", "text": "Come on, let's go downstairs."},
+	{"next_scene": "second_scene", "transition": "fade"}
 ]

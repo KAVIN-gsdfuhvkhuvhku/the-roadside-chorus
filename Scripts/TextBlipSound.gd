@@ -1,7 +1,9 @@
 extends AudioStreamPlayer
 
 const sounds : Dictionary = {
-	"human": preload("res://assets/Sounds/human_type.wav")
+	"human": preload("res://assets/Sounds/human_type.wav"),
+	"animal": preload("res://assets/Sounds/human_type.wav"),
+	"??": preload("res://assets/Sounds/human_type.wav")
 }
 
 func play_sound(character_details: Dictionary):

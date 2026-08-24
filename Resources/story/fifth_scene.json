@@ -1,0 +1,26 @@
+[
+{"location": "forest_road"},
+
+{ "speaker": "Narrator", "text": "You continue driving, still thinking about what just happened." },
+{ "speaker": "You", "text": "That was weird..." },
+
+{ "speaker": "Hedgehog", "text": "Scurry, scurry!" },
+{ "speaker": "You", "text": "Whoa! Again?" },
+
+{ "speaker": "Hedgehog", "text": "Scurry, scurry, scurry!" },
+{ "speaker": "You", "text": "A hedgehog?" },
+
+{ "speaker": "Hedgehog", "text": "Scurry..." },
+{ "speaker": "You", "text": "Okay... that's two animals in one day." },
+
+{ "speaker": "You", "text": "Maybe I should actually check where they're going. Why are they all on the road?" },
+
+{ "speaker": "Narrator", "text": "You pull over and step out of the car." },
+{ "speaker": "Monty", "text": "Woof!" },
+{ "speaker": "You", "text": "Stay here, Monty. I'll be right back." },
+
+{ "speaker": "Narrator", "text": "You follow the hedgehog into the forest." },
+
+{"next_scene": "sixth_scene", "transition": "fade"}
+
+]

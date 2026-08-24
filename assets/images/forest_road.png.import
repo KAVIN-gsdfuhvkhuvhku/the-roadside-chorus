@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://crorehd33v4dl"
-path="res://.godot/imported/Title-screen.png-b570ccaf89e0712e270e8a02a473ed6a.ctex"
+uid="uid://cdmsu7hp1mwi3"
+path="res://.godot/imported/forest_road.png-141c3786933af747b995942d51b0bc12.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/Title-screen.png"
-dest_files=["res://.godot/imported/Title-screen.png-b570ccaf89e0712e270e8a02a473ed6a.ctex"]
+source_file="res://assets/images/forest_road.png"
+dest_files=["res://.godot/imported/forest_road.png-141c3786933af747b995942d51b0bc12.ctex"]
 
 [params]
 

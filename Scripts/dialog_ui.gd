@@ -35,7 +35,7 @@ func _process(delta):
 			dialog_line.visible_ratio += (1.0/dialog_line.text.length()) * (ANIMATION_SPEED * delta)
 			if dialog_line.visible_characters > current_visible_characters:
 				current_visible_characters = dialog_line.visible_characters
-				var last_char = dialog_line.text[current_visible_characters - 1]
+				var _last_char = dialog_line.text[current_visible_characters - 1]
 		else:
 			animate_text = false
 			text_animation_done.emit()

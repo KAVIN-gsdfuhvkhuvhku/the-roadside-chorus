@@ -1,0 +1,86 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://dtn6oggqoqtv"]
+
+[ext_resource type="Texture2D" uid="uid://ckem3ihsvl4l5" path="res://assets/Sprites/Tui/Grandma Neutral + Blink_20260824233520.PNG" id="1_rnupt"]
+[ext_resource type="Texture2D" uid="uid://bh2i6y2v6akoe" path="res://assets/Sprites/Tui/Grandma Neutral + Blink_20260824233509.PNG" id="2_1m1p2"]
+[ext_resource type="Texture2D" uid="uid://b5f5otses0wfi" path="res://assets/Sprites/Tui/Grandma Neutral + Blink_20260824233529.PNG" id="3_wq5oi"]
+[ext_resource type="Texture2D" uid="uid://d1nduflhjt320" path="res://assets/Sprites/Tui/Grandma Neutral + Blink_20260824233533.PNG" id="4_ydt45"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_rnupt")
+}, {
+"duration": 20.0,
+"texture": ExtResource("2_1m1p2")
+}],
+"loop": true,
+"name": &"flight-idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_wq5oi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_ydt45")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_wq5oi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_ydt45")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_wq5oi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_ydt45")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_wq5oi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_ydt45")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_wq5oi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_ydt45")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_wq5oi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_ydt45")
+}, {
+"duration": 50.0,
+"texture": ExtResource("2_1m1p2")
+}],
+"loop": true,
+"name": &"flight-talking",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_wq5oi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_ydt45")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_ydt45")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_wq5oi")
+}],
+"loop": true,
+"name": &"talking",
+"speed": 5.0
+}]
