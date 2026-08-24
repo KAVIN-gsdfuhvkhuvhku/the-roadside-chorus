@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://1iqmt143vbhx"
-path="res://.godot/imported/Outside-house.PNG-9dd3a5dfea43ee58a39d2441a917f5ea.ctex"
+path="res://.godot/imported/Outside-house.png-2a96f4a3ee82396de2d7905c06247aa1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Images/Outside-house.PNG"
-dest_files=["res://.godot/imported/Outside-house.PNG-9dd3a5dfea43ee58a39d2441a917f5ea.ctex"]
+source_file="res://assets/images/Outside-house.png"
+dest_files=["res://.godot/imported/Outside-house.png-2a96f4a3ee82396de2d7905c06247aa1.ctex"]
 
 [params]
 

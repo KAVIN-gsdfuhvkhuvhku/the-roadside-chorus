@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://be2gupdr5mp76"]
 
 [ext_resource type="Script" uid="uid://cwoog0bic8cds" path="res://Scripts/main_scene.gd" id="1_x6ack"]
-[ext_resource type="Texture2D" uid="uid://0yckodic8a6l" path="res://assets/Images/Kitchen.png" id="2_iacmt"]
+[ext_resource type="Texture2D" uid="uid://1iqmt143vbhx" path="res://assets/images/Outside-house.png" id="2_x6ack"]
 [ext_resource type="PackedScene" uid="uid://dbsfbb5piu54a" path="res://Scenes/character.tscn" id="3_6ev3c"]
 [ext_resource type="PackedScene" uid="uid://cs85hmukq2cs4" path="res://Scenes/dialog_ui.tscn" id="4_maf8m"]
 
@@ -11,13 +11,14 @@ script = ExtResource("1_x6ack")
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=2130658078]
 layer = -1
 
-[node name="TextureRect" type="TextureRect" parent="CanvasLayer" unique_id=1126431741]
+[node name="Background" type="TextureRect" parent="CanvasLayer" unique_id=1126431741]
+unique_name_in_owner = true
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("2_iacmt")
+texture = ExtResource("2_x6ack")
 
 [node name="CanvasLayer2" type="CanvasLayer" parent="." unique_id=628146881]
 

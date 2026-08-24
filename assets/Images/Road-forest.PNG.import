@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d05ww6is1b0lx"
-path="res://.godot/imported/Road-forest.PNG-6b8bacc29ba50a91fa9fa4626ed7e144.ctex"
+path="res://.godot/imported/Road-forest.png-5ad151a40157d09f84d16f9aec988422.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Images/Road-forest.PNG"
-dest_files=["res://.godot/imported/Road-forest.PNG-6b8bacc29ba50a91fa9fa4626ed7e144.ctex"]
+source_file="res://assets/images/Road-forest.png"
+dest_files=["res://.godot/imported/Road-forest.png-5ad151a40157d09f84d16f9aec988422.ctex"]
 
 [params]
 

@@ -23,6 +23,8 @@ var current_character_details : Dictionary
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	#hide the choice list
+	dialog_line.text = ""
+	speaker_name.text = ""
 	choice_list.hide()
 	text_blip_timer.timeout.connect(_on_text_blip_timeout)
 	

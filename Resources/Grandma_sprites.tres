@@ -1,22 +1,23 @@
 [gd_resource type="SpriteFrames" format=3 uid="uid://b5qdmxq2jsmht"]
 
-[ext_resource type="Texture2D" uid="uid://dcmf21pq8lefl" path="res://assets/Sprites/Grandma/Box/Grandma Neutral + Blink2_20260823190823.PNG" id="1_5bfq6"]
 [ext_resource type="Texture2D" uid="uid://dqcrkma2wg4ff" path="res://assets/Sprites/Grandma/Idle/Grandma Neutral + Blink_20260815154208.PNG" id="1_mexye"]
+[ext_resource type="Texture2D" uid="uid://dcmf21pq8lefl" path="res://assets/Sprites/Grandma/box-idle/Grandma Neutral + Blink2_20260823190823.PNG" id="1_sypm5"]
 [ext_resource type="Texture2D" uid="uid://cd241e6i6oi60" path="res://assets/Sprites/Grandma/Idle/Grandma Neutral + Blink_20260815154216.PNG" id="2_ffhyo"]
+[ext_resource type="Texture2D" uid="uid://t25hkjc5coeo" path="res://assets/Sprites/Grandma/box-talking/Grandma Neutral + Blink2_20260823190802.PNG" id="2_kb3ct"]
 [ext_resource type="Texture2D" uid="uid://dy75wcnceprs3" path="res://assets/Sprites/Grandma/Talking/Grandma Neutral + Blink_20260815154225.PNG" id="3_6x2sa"]
+[ext_resource type="Texture2D" uid="uid://8bstmqfar2k8" path="res://assets/Sprites/Grandma/box-talking/Grandma Neutral + Blink2_20260823190808.PNG" id="3_doebp"]
+[ext_resource type="Texture2D" uid="uid://cw3sbkiu1k4hs" path="res://assets/Sprites/Grandma/box-talking/Grandma Neutral + Blink2_20260823190813.PNG" id="4_5bfq6"]
 [ext_resource type="Texture2D" uid="uid://bx0aqckkoypt7" path="res://assets/Sprites/Grandma/Talking/Grandma Neutral + Blink_20260815154254.PNG" id="4_42g1j"]
+[ext_resource type="Texture2D" uid="uid://8dkeubfjdgga" path="res://assets/Sprites/Grandma/box-talking/Grandma Neutral + Blink2_20260823190819.PNG" id="5_kjtdw"]
 [ext_resource type="Texture2D" uid="uid://xqituul5t1jq" path="res://assets/Sprites/Grandma/Talking/Grandma Neutral + Blink_20260815154249.PNG" id="5_sypm5"]
-[ext_resource type="Texture2D" uid="uid://dddwgdhxm5lyj" path="res://assets/Sprites/Grandma/Box/Grandma Neutral + Blink2_20260823190827.PNG" id="6_1xnly"]
 [ext_resource type="Texture2D" uid="uid://dpe40wgnhptqw" path="res://assets/Sprites/Grandma/Talking/Grandma Neutral + Blink_20260815154239.PNG" id="6_kb3ct"]
-[ext_resource type="Texture2D" uid="uid://bxb26nlcqga0g" path="res://assets/Sprites/Grandma/Box/Grandma Neutral + Blink2_20260823190835.PNG" id="7_4q3wf"]
 [ext_resource type="Texture2D" uid="uid://doy0fs1q8rudm" path="res://assets/Sprites/Grandma/Talking/Grandma Neutral + Blink_20260815154233.PNG" id="7_doebp"]
-[ext_resource type="Texture2D" uid="uid://buoyeyyxnbv1d" path="res://assets/Sprites/Grandma/Box/Grandma Neutral + Blink2_20260823190831.PNG" id="8_grbg4"]
 
 [resource]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("1_5bfq6")
+"texture": ExtResource("1_sypm5")
 }],
 "loop": true,
 "name": &"box-idle",
@@ -24,19 +25,19 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("6_1xnly")
+"texture": ExtResource("2_kb3ct")
 }, {
 "duration": 1.0,
-"texture": ExtResource("7_4q3wf")
+"texture": ExtResource("3_doebp")
 }, {
 "duration": 1.0,
-"texture": ExtResource("8_grbg4")
+"texture": ExtResource("4_5bfq6")
 }, {
 "duration": 1.0,
-"texture": ExtResource("1_5bfq6")
+"texture": ExtResource("5_kjtdw")
 }],
 "loop": true,
-"name": &"box-smile",
+"name": &"box-talking",
 "speed": 5.0
 }, {
 "frames": [{

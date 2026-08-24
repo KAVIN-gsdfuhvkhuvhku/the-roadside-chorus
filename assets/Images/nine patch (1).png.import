@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bie5nqcjve88b"
-path="res://.godot/imported/nine patch (1).png-e2a8e684db9dd4260c283e5f5d5005ac.ctex"
+path="res://.godot/imported/nine patch (1).png-29a5e85bb04278c911d2320d3c6498f6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Images/nine patch (1).png"
-dest_files=["res://.godot/imported/nine patch (1).png-e2a8e684db9dd4260c283e5f5d5005ac.ctex"]
+source_file="res://assets/images/nine patch (1).png"
+dest_files=["res://.godot/imported/nine patch (1).png-29a5e85bb04278c911d2320d3c6498f6.ctex"]
 
 [params]
 
