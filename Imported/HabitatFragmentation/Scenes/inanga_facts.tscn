@@ -1,0 +1,87 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://Imported/HabitatFragmentation/src/inanga_facts.gd" id="1_facts"]
+[ext_resource type="Theme" uid="uid://1exugx4b1mto" path="res://Resources/new_theme.tres" id="2_theme"]
+
+[node name="InanangaFacts" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("2_theme")
+script = ExtResource("1_facts")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Background" type="ColorRect" parent="CanvasLayer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.082, 0.165, 0.11, 1.0)
+
+[node name="Margin" type="MarginContainer" parent="CanvasLayer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("2_theme")
+theme_override_constants/margin_left = 48
+theme_override_constants/margin_right = 48
+theme_override_constants/margin_top = 36
+theme_override_constants/margin_bottom = 36
+
+[node name="Layout" type="VBoxContainer" parent="CanvasLayer/Margin"]
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="Title" type="Label" parent="CanvasLayer/Margin/Layout"]
+layout_mode = 2
+text = "Puzzle Solved!"
+horizontal_alignment = 1
+theme_override_font_sizes/font_size = 52
+theme_override_colors/font_color = Color(1.0, 0.95, 0.4, 1.0)
+
+[node name="FishImage" type="TextureRect" parent="CanvasLayer/Margin/Layout"]
+layout_mode = 2
+expand_mode = 3
+stretch_mode = 5
+size_flags_horizontal = 3
+custom_minimum_size = Vector2(0, 180)
+
+[node name="ImageSource" type="Label" parent="CanvasLayer/Margin/Layout"]
+layout_mode = 2
+text = "Image source: Ryan Photographic by Paddy Ryan"
+horizontal_alignment = 1
+theme_override_font_sizes/font_size = 16
+theme_override_colors/font_color = Color(0.86, 0.9, 0.86, 0.9)
+
+[node name="HSeparator" type="HSeparator" parent="CanvasLayer/Margin/Layout"]
+layout_mode = 2
+theme_override_colors/color = Color(1.0, 1.0, 1.0, 0.3)
+
+[node name="FactsScroll" type="ScrollContainer" parent="CanvasLayer/Margin/Layout"]
+layout_mode = 2
+size_flags_vertical = 3
+horizontal_scroll_mode = 0
+
+[node name="Facts" type="RichTextLabel" parent="CanvasLayer/Margin/Layout/FactsScroll"]
+layout_mode = 2
+size_flags_horizontal = 3
+bbcode_enabled = true
+autowrap_mode = 3
+fit_content = true
+scroll_active = false
+theme_override_constants/line_separation = 6
+theme_override_font_sizes/normal_font_size = 18
+theme_override_colors/default_color = Color(0.95, 0.95, 0.95, 1.0)
+
+[node name="ContinueButton" type="Button" parent="CanvasLayer/Margin/Layout"]
+custom_minimum_size = Vector2(0, 72)
+layout_mode = 2
+text = "Continue"
+theme_override_font_sizes/font_size = 28
