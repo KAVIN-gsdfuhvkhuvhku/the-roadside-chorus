@@ -1,0 +1,40 @@
+[
+	{ "location": "Bedroom" },
+
+	{ "speaker": "Narrator", "text": "Morning light shines through the curtains. Today feels a little different." },
+	{ "speaker": "You", "text": "Mmm... morning already?", "expression": "Wakeup"},
+	{ "speaker": "You", "text": "Yawn...", "expression": "Yawn"},
+	{ "speaker": "You", "text": "Wait...", "expression": "Wakeup"},
+	{ "speaker": "You", "text": "I'M FINALLY DONE WITH HIGH SCHOOL!", "expression": "Wakeup"},
+	{ "speaker": "Monty", "text": "Woof! Woof! Woof!!!!" },
+	{ "speaker": "You", "text": "Haha, morning to you too, Monty.",  "expression": "Wakeup"},
+	{ "speaker": "You", "text": "No more homework. No more exams. No more waking up early for school.", "expression": "Wakeup"},
+
+	{
+		"choices":
+		[
+			{ "text": "Celebrate with Monty.", "goto": "celebrate" },
+			{ "text": "Get ready for the day.", "goto": "get_ready" }
+		]
+	},
+
+	{ "anchor": "celebrate" },
+	{ "speaker": "You", "text": "Come here, Monty!", "expression": "Wakeup"},
+	{ "speaker": "You", "text": "Who's ready to celebrate?", "expression": "Wakeup"},
+	{ "speaker": "Monty", "text": "Wurf woof woof! WOOF!" },
+	{ "speaker": "You", "text": "That's what I thought. Party!", "expression": "Wakeup"},
+	{ "speaker": "Monty", "text": "woof woof woof.. woof" },
+	{ "speaker": "You", "text": "You're right, who parties in pajamas... Give me a second to change.", "expression": "Wakeup"},
+	{ "speaker": "You", "text": "There we go!"},
+	{ "goto": "end" },
+
+	{ "anchor": "get_ready" },
+	{ "speaker": "You", "text": "Alright, first day of freedom. Let's make it count.",},
+	{ "speaker": "Monty", "text": "Woof!"},
+	{ "speaker": "You", "text": "And you too, Monty."},
+	{ "goto": "end" },
+
+	{ "anchor": "end" },
+	{ "speaker": "You", "text": "Come on, let's go downstairs."},
+	{"next_scene": "second_scene", "transition": "fade"}
+]

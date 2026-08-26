@@ -1,0 +1,364 @@
+[
+{ "location": "Conservation_inside" },
+
+{ "speaker": "Narrator", "text": "You finish the puzzle and place the final tile into position." },
+{ "speaker": "You", "text": "There! Done." },
+
+{ "speaker": "Helper", "text": "Not bad." },
+{ "speaker": "You", "text": "Not bad? I just spent ages putting that thing together!" },
+
+{ "speaker": "Helper", "text": "And now you know a little more about habitat fragmentation." },
+{ "speaker": "You", "text": "I guess I do." },
+
+{ "speaker": "Helper", "text": "Let's see how much you actually remember." },
+{ "speaker": "You", "text": "Wait... there's a quiz?" },
+
+{ "speaker": "Helper", "text": "Of course there's a quiz." },
+{ "speaker": "You", "text": "Oh no." },
+
+{ "speaker": "Helper", "text": "Don't worry. You can choose how difficult you want the questions to be." },
+{ "speaker": "Helper", "text": "Would you like easier questions, harder questions, or both?" },
+
+{
+	"choices":
+	[
+		{ "text": "Ask me easier questions.", "goto": "easy_quiz" },
+		{ "text": "Ask me harder questions.", "goto": "hard_quiz" },
+		{ "text": "Ask me both.", "goto": "both_quiz" }
+	]
+},
+
+{ "anchor": "easy_quiz" },
+
+{ "speaker": "Helper", "text": "Alright. We'll start with the basics." },
+{ "speaker": "Helper", "text": "What is another name for the long-tailed bat?" },
+
+{
+	"choices":
+	[
+		{ "text": "Pekapeka", "goto": "easy_q1_correct" },
+		{ "text": "Pūkeko", "goto": "easy_q1_wrong" },
+		{ "text": "Tūī", "goto": "easy_q1_wrong" }
+	]
+},
+
+{ "anchor": "easy_q1_correct" },
+{ "speaker": "Helper", "text": "Correct! Long-tailed bats are also known as pekapeka." },
+{ "goto": "easy_q2" },
+
+{ "anchor": "easy_q1_wrong" },
+{ "speaker": "Helper", "text": "Not quite. The long-tailed bat is also known as the pekapeka." },
+{ "goto": "easy_q2" },
+
+{ "anchor": "easy_q2" },
+{ "speaker": "Helper", "text": "Where do long-tailed bats live?" },
+
+{
+	"choices":
+	[
+		{ "text": "Around native forests and forest edges.", "goto": "easy_q2_correct" },
+		{ "text": "Only in the ocean.", "goto": "easy_q2_wrong" },
+		{ "text": "Only in large cities.", "goto": "easy_q2_wrong" }
+	]
+},
+
+{ "anchor": "easy_q2_correct" },
+{ "speaker": "Helper", "text": "Correct. They live around native forests and forest edges, where they roost in old trees and feed on insects." },
+{ "goto": "easy_q3" },
+
+{ "anchor": "easy_q2_wrong" },
+{ "speaker": "Helper", "text": "Not quite. Long-tailed bats live around native forests and forest edges." },
+{ "goto": "easy_q3" },
+
+{ "anchor": "easy_q3" },
+{ "speaker": "Helper", "text": "What is habitat fragmentation?" },
+
+{
+	"choices":
+	[
+		{ "text": "When habitats are separated or broken up.", "goto": "easy_q3_correct" },
+		{ "text": "When animals move to a new country.", "goto": "easy_q3_wrong" },
+		{ "text": "When a forest grows larger.", "goto": "easy_q3_wrong" }
+	]
+},
+
+{ "anchor": "easy_q3_correct" },
+{ "speaker": "Helper", "text": "Correct. Habitat fragmentation happens when habitats are broken up or separated, making it harder for animals to access the places they need." },
+{ "goto": "easy_q4" },
+
+{ "anchor": "easy_q3_wrong" },
+{ "speaker": "Helper", "text": "Not quite. Habitat fragmentation is when habitats become separated or broken up." },
+{ "goto": "easy_q4" },
+
+{ "anchor": "easy_q4" },
+{ "speaker": "Helper", "text": "What is an īnanga?" },
+
+{
+	"choices":
+	[
+		{ "text": "A native freshwater fish.", "goto": "easy_q4_correct" },
+		{ "text": "A type of bat.", "goto": "easy_q4_wrong" },
+		{ "text": "A native tree.", "goto": "easy_q4_wrong" }
+	]
+},
+
+{ "anchor": "easy_q4_correct" },
+{ "speaker": "Helper", "text": "Correct. Īnanga are native freshwater fish found in streams, rivers, wetlands and estuaries around New Zealand." },
+{ "goto": "easy_end" },
+
+{ "anchor": "easy_q4_wrong" },
+{ "speaker": "Helper", "text": "Not quite. Īnanga are native freshwater fish." },
+{ "goto": "easy_end" },
+
+{ "anchor": "easy_end" },
+{ "speaker": "Helper", "text": "Not bad. You remembered the important parts." },
+{ "goto": "safety" },
+
+
+{ "anchor": "hard_quiz" },
+
+{ "speaker": "Helper", "text": "Alright. Let's see if you were actually paying attention." },
+{ "speaker": "Helper", "text": "Why do īnanga need to move between different habitats during their life cycle?" },
+
+{
+	"choices":
+	[
+		{ "text": "They need access to different habitats for important parts of their life cycle.", "goto": "hard_q1_correct" },
+		{ "text": "They cannot survive in freshwater.", "goto": "hard_q1_wrong" },
+		{ "text": "They travel overseas every year.", "goto": "hard_q1_wrong" }
+	]
+},
+
+{ "anchor": "hard_q1_correct" },
+{ "speaker": "Helper", "text": "Correct. Barriers can stop īnanga from reaching important spawning and feeding areas." },
+{ "goto": "hard_q2" },
+
+{ "anchor": "hard_q1_wrong" },
+{ "speaker": "Helper", "text": "Not quite. Īnanga need to move between different habitats during their life cycle, including important spawning and feeding areas." },
+{ "goto": "hard_q2" },
+
+{ "anchor": "hard_q2" },
+{ "speaker": "Helper", "text": "What can happen when waterways become disconnected?" },
+
+{
+	"choices":
+	[
+		{ "text": "Īnanga can lose access to habitats they need to survive.", "goto": "hard_q2_correct" },
+		{ "text": "Īnanga become able to live anywhere.", "goto": "hard_q2_wrong" },
+		{ "text": "Nothing changes for them.", "goto": "hard_q2_wrong" }
+	]
+},
+
+{ "anchor": "hard_q2_correct" },
+{ "speaker": "Helper", "text": "Exactly. Disconnected waterways can prevent īnanga from reaching the habitats they need." },
+{ "goto": "hard_q3" },
+
+{ "anchor": "hard_q2_wrong" },
+{ "speaker": "Helper", "text": "Not quite. When waterways become disconnected, īnanga can lose access to important habitats." },
+{ "goto": "hard_q3" },
+
+{ "anchor": "hard_q3" },
+{ "speaker": "Helper", "text": "What is one way roads can affect long-tailed bats?" },
+
+{
+	"choices":
+	[
+		{ "text": "Roads can separate forests and reduce access to feeding areas and roosting trees.", "goto": "hard_q3_correct" },
+		{ "text": "Roads stop bats from using echolocation.", "goto": "hard_q3_wrong" },
+		{ "text": "Roads make bats unable to fly.", "goto": "hard_q3_wrong" }
+	]
+},
+
+{ "anchor": "hard_q3_correct" },
+{ "speaker": "Helper", "text": "Correct. The loss and separation of forests can make it harder for bats to access feeding areas and roosting trees." },
+{ "goto": "hard_q4" },
+
+{ "anchor": "hard_q3_wrong" },
+{ "speaker": "Helper", "text": "Not quite. Roads can separate forests, reducing access to feeding areas and roosting trees." },
+{ "goto": "hard_q4" },
+
+{ "anchor": "hard_q4" },
+{ "speaker": "Helper", "text": "Do you remember the conservation status of the long-tailed bat?" },
+
+{
+	"choices":
+	[
+		{ "text": "Threatened – Nationally Critical.", "goto": "hard_q4_correct" },
+		{ "text": "Not threatened.", "goto": "hard_q4_wrong" },
+		{ "text": "Extinct in New Zealand.", "goto": "hard_q4_wrong" }
+	]
+},
+
+{ "anchor": "hard_q4_correct" },
+{ "speaker": "Helper", "text": "Correct. Long-tailed bats are classified as Threatened – Nationally Critical." },
+{ "goto": "hard_q5" },
+
+{ "anchor": "hard_q4_wrong" },
+{ "speaker": "Helper", "text": "Not quite. Long-tailed bats are classified as Threatened – Nationally Critical." },
+{ "goto": "hard_q5" },
+
+{ "anchor": "hard_q5" },
+{ "speaker": "Helper", "text": "Last one. What is one interesting fact about īnanga?" },
+
+{
+	"choices":
+	[
+		{ "text": "They are one of the main fish species that make up whitebait.", "goto": "hard_q5_correct" },
+		{ "text": "They can fly at 60 km/h.", "goto": "hard_q5_wrong" },
+		{ "text": "They use echolocation to find food.", "goto": "hard_q5_wrong" }
+	]
+},
+
+{ "anchor": "hard_q5_correct" },
+{ "speaker": "Helper", "text": "Correct. Īnanga are one of the main fish species that make up whitebait." },
+{ "goto": "hard_end" },
+
+{ "anchor": "hard_q5_wrong" },
+{ "speaker": "Helper", "text": "Not quite. Īnanga are one of the main fish species that make up whitebait. The echolocation and 60 km/h fact belongs to the long-tailed bat." },
+{ "goto": "hard_end" },
+
+{ "anchor": "hard_end" },
+{ "speaker": "Helper", "text": "Not bad. Those were the harder questions." },
+{ "goto": "safety" },
+
+
+{ "anchor": "both_quiz" },
+
+{ "speaker": "Helper", "text": "Going for both? Alright. We'll start with the easier questions, then I'll make things a little harder." },
+{ "goto": "easy_quiz_both" },
+
+{ "anchor": "easy_quiz_both" },
+{ "speaker": "Helper", "text": "What is another name for the long-tailed bat?" },
+
+{
+	"choices":
+	[
+		{ "text": "Pekapeka.", "goto": "both_q1_correct" },
+		{ "text": "Pūkeko.", "goto": "both_q1_wrong" },
+		{ "text": "Tūī.", "goto": "both_q1_wrong" }
+	]
+},
+
+{ "anchor": "both_q1_correct" },
+{ "speaker": "Helper", "text": "Correct. Pekapeka." },
+{ "goto": "both_q2" },
+
+{ "anchor": "both_q1_wrong" },
+{ "speaker": "Helper", "text": "Not quite. Long-tailed bats are also known as pekapeka." },
+{ "goto": "both_q2" },
+
+{ "anchor": "both_q2" },
+{ "speaker": "Helper", "text": "What is an īnanga?" },
+
+{
+	"choices":
+	[
+		{ "text": "A native freshwater fish.", "goto": "both_q2_correct" },
+		{ "text": "A native bat.", "goto": "both_q2_wrong" },
+		{ "text": "A native bird.", "goto": "both_q2_wrong" }
+	]
+},
+
+{ "anchor": "both_q2_correct" },
+{ "speaker": "Helper", "text": "Correct." },
+{ "goto": "both_q3" },
+
+{ "anchor": "both_q2_wrong" },
+{ "speaker": "Helper", "text": "Not quite. Īnanga are native freshwater fish." },
+{ "goto": "both_q3" },
+
+{ "anchor": "both_q3" },
+{ "speaker": "Helper", "text": "What is habitat fragmentation?" },
+
+{
+	"choices":
+	[
+		{ "text": "When habitats become separated or broken up.", "goto": "both_q3_correct" },
+		{ "text": "When animals become extinct.", "goto": "both_q3_wrong" },
+		{ "text": "When a habitat becomes larger.", "goto": "both_q3_wrong" }
+	]
+},
+
+{ "anchor": "both_q3_correct" },
+{ "speaker": "Helper", "text": "Correct." },
+{ "goto": "both_hard_start" },
+
+{ "anchor": "both_q3_wrong" },
+{ "speaker": "Helper", "text": "Not quite. Habitat fragmentation is when habitats become separated or broken up." },
+{ "goto": "both_hard_start" },
+
+{ "anchor": "both_hard_start" },
+{ "speaker": "Helper", "text": "Alright. Those were the easy ones. Now for the harder questions." },
+
+{ "speaker": "Helper", "text": "Why can culverts and dams be a problem for īnanga?" },
+
+{
+	"choices":
+	[
+		{ "text": "They can prevent īnanga from reaching important spawning and feeding areas.", "goto": "both_q4_correct" },
+		{ "text": "They stop īnanga from eating insects.", "goto": "both_q4_wrong" },
+		{ "text": "They prevent īnanga from using echolocation.", "goto": "both_q4_wrong" }
+	]
+},
+
+{ "anchor": "both_q4_correct" },
+{ "speaker": "Helper", "text": "Exactly. Barriers can disconnect waterways and prevent īnanga from reaching important habitats." },
+{ "goto": "both_q5" },
+
+{ "anchor": "both_q4_wrong" },
+{ "speaker": "Helper", "text": "Not quite. Culverts and dams can prevent īnanga from reaching important spawning and feeding areas." },
+{ "goto": "both_q5" },
+
+{ "anchor": "both_q5" },
+{ "speaker": "Helper", "text": "Why can habitat fragmentation be especially dangerous for long-tailed bats?" },
+
+{
+	"choices":
+	[
+		{ "text": "It can separate forests and reduce access to feeding areas and roosting trees.", "goto": "both_q5_correct" },
+		{ "text": "It prevents them from flying.", "goto": "both_q5_wrong" },
+		{ "text": "It makes their echolocation stop working.", "goto": "both_q5_wrong" }
+	]
+},
+
+{ "anchor": "both_q5_correct" },
+{ "speaker": "Helper", "text": "Correct. Losing and separating forests can make it harder for them to reach important feeding and roosting areas." },
+{ "goto": "both_end" },
+
+{ "anchor": "both_q5_wrong" },
+{ "speaker": "Helper", "text": "Not quite. Habitat fragmentation can separate forests and reduce access to feeding areas and roosting trees." },
+{ "goto": "both_end" },
+
+{ "anchor": "both_end" },
+{ "speaker": "Helper", "text": "You made it through both sets of questions." },
+{ "goto": "safety" },
+
+
+{ "anchor": "safety" },
+
+{ "speaker": "Helper", "text": "Now, here's the part that matters most." },
+{ "speaker": "You", "text": "What's that?" },
+
+{ "speaker": "Helper", "text": "Knowing about wildlife doesn't help much if you don't change how you behave around it." },
+{ "speaker": "Helper", "text": "When you're driving, stay alert and watch for animals, especially near forests, wetlands and other wildlife habitats." },
+{ "speaker": "Helper", "text": "Follow the speed limit and slow down safely when you see wildlife near the road." },
+{ "speaker": "Helper", "text": "Keep your attention on the road and avoid distractions." },
+{ "speaker": "Helper", "text": "If an animal crosses the road, don't make a sudden dangerous manoeuvre. Keep control of your vehicle and consider the safety of other road users." },
+
+{ "speaker": "You", "text": "And Monty?" },
+
+{ "speaker": "Helper", "text": "Keep pets properly secured while travelling." },
+{ "speaker": "Helper", "text": "Dogs should not be loose in the vehicle or able to jump out of an open window." },
+{ "speaker": "Helper", "text": "And never leave a pet unattended in a parked car." },
+
+{ "speaker": "You", "text": "Right. Secure Monty, stay focused, slow down around wildlife, and don't leave him alone in the car." },
+
+{ "speaker": "Helper", "text": "Exactly." },
+{ "speaker": "Helper", "text": "You can't control everything that happens on the road. But you can control how carefully you drive." },
+
+{ "speaker": "Narrator", "text": "You look back towards the forest. Somewhere beyond the trees, you hear the familiar call of the tūī." },
+
+{ "speaker": "You", "text": "I think I understand now." },
+
+{"next_scene": "ninth_scene", "transition": "fade"}
+]

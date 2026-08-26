@@ -1,0 +1,43 @@
+[
+	
+{ "location": "Home_sunset" },
+
+{ "speaker": "Narrator", "text": "The sun is beginning to set as you finally arrive home." },
+
+{ "speaker": "You", "text": "What a day..." },
+{ "speaker": "Monty", "text": "Woof." },
+
+{ "speaker": "You", "text": "Yeah. I know." },
+
+{ "speaker": "Narrator", "text": "You step out of the car and look back at the road." },
+
+{ "speaker": "You", "text": "It doesn't really look different." },
+{ "speaker": "You", "text": "But I guess I see it differently now." },
+
+{ "speaker": "Narrator", "text": "You think about the hedgehog crossing the road, the tūī in the forest, and everything you learned at the conservation centre." },
+
+{ "speaker": "You", "text": "All this time, I thought roads were just roads." },
+{ "speaker": "You", "text": "I never thought about what was on either side of them." },
+
+{ "speaker": "Monty", "text": "Woof?" },
+{ "speaker": "You", "text": "Yeah, Monty. Come on." },
+
+{ "speaker": "Narrator", "text": "You grab the box from the car and carry it inside." },
+
+{ "speaker": "You", "text": "Grandma's going to want to hear about this." },
+
+{ "speaker": "Narrator", "text": "You pause at the doorway and glance back one last time." },
+
+{ "speaker": "You", "text": "Next time I'm on the road..." },
+{ "speaker": "You", "text": "I'll remember who's living beside it." },
+
+{ "speaker": "Narrator", "text": "Monty trots inside, his tail wagging behind him." },
+{ "speaker": "Monty", "text": "Woof!" },
+
+{ "speaker": "You", "text": "Coming!" },
+
+{ "speaker": "Narrator", "text": "The sun sinks below the horizon as you close the door." },
+{ "speaker": "Narrator", "text": "The road carries on. So does everything living alongside it." },
+{ "speaker": "Narrator", "text": "Thank you for playing The Roadside Chorus." },
+{"next_scene": "", "transition": "fade"},
+]
