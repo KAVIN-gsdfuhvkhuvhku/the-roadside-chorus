@@ -1,0 +1,76 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://Imported/HabitatFragmentation/src/main.gd" id="1_fshg2"]
+[ext_resource type="Theme" uid="uid://1exugx4b1mto" path="res://Resources/new_theme.tres" id="2_theme"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3bac8"]
+size = Vector2(1000, 1000)
+
+[node name="Main" type="Area2D" unique_id=1211136886]
+script = ExtResource("1_fshg2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=258075140]
+position = Vector2(500, 500)
+shape = SubResource("RectangleShape2D_3bac8")
+
+[node name="Tile1" type="Sprite2D" parent="." unique_id=377338392]
+position = Vector2(125, 125)
+
+[node name="Tile2" type="Sprite2D" parent="." unique_id=1894770912]
+position = Vector2(375, 125)
+
+[node name="Tile3" type="Sprite2D" parent="." unique_id=67293491]
+position = Vector2(625, 125)
+
+[node name="Tile4" type="Sprite2D" parent="." unique_id=1367709233]
+position = Vector2(875, 125)
+
+[node name="Tile5" type="Sprite2D" parent="." unique_id=1231400746]
+position = Vector2(125, 375)
+
+[node name="Tile6" type="Sprite2D" parent="." unique_id=47466596]
+position = Vector2(375, 375)
+
+[node name="Tile7" type="Sprite2D" parent="." unique_id=1081290937]
+position = Vector2(625, 375)
+
+[node name="Tile8" type="Sprite2D" parent="." unique_id=373278018]
+position = Vector2(875, 375)
+
+[node name="Tile9" type="Sprite2D" parent="." unique_id=2139325214]
+position = Vector2(125, 625)
+
+[node name="Tile10" type="Sprite2D" parent="." unique_id=1059469733]
+position = Vector2(375, 625)
+
+[node name="Tile11" type="Sprite2D" parent="." unique_id=1928256325]
+position = Vector2(625, 625)
+
+[node name="Tile12" type="Sprite2D" parent="." unique_id=76052216]
+position = Vector2(875, 625)
+
+[node name="Tile13" type="Sprite2D" parent="." unique_id=1614535095]
+position = Vector2(125, 875)
+
+[node name="Tile14" type="Sprite2D" parent="." unique_id=310522186]
+position = Vector2(375, 875)
+
+[node name="Tile15" type="Sprite2D" parent="." unique_id=1340006200]
+position = Vector2(625, 875)
+
+[node name="Tile16" type="Sprite2D" parent="." unique_id=1835479832]
+position = Vector2(875, 875)
+
+[node name="CelebrationTile" type="Sprite2D" parent="." unique_id=1064058629]
+visible = false
+position = Vector2(125, 125)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1472630017]
+
+[node name="WinDialog" type="AcceptDialog" parent="CanvasLayer" unique_id=372970204]
+title = ""
+size = Vector2i(760, 360)
+min_size = Vector2i(760, 360)
+ok_button_text = "Continue"
+dialog_text = "Congrats! \nYou have solved!"
+theme = ExtResource("2_theme")

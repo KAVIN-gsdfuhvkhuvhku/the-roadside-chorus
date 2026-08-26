@@ -3,6 +3,9 @@
 [ext_resource type="Theme" uid="uid://1exugx4b1mto" path="res://Resources/new_theme.tres" id="1_njptv"]
 [ext_resource type="FontFile" uid="uid://bww2oh2xqdaih" path="res://assets/Fonts/VT323/VT323-Regular.ttf" id="2_2x5cq"]
 [ext_resource type="Script" uid="uid://cbqeo1t4y32j3" path="res://Scripts/dialog_ui.gd" id="2_yqatb"]
+[ext_resource type="AudioStream" uid="uid://cgmbjgu4m0ctr" path="res://assets/Sounds/human_type.wav" id="3_5t5tq"]
+[ext_resource type="Script" uid="uid://bbsdbdmonkxuk" path="res://Scripts/TextBlipSound.gd" id="3_kymi5"]
+[ext_resource type="PackedScene" uid="uid://c64bb877t1qov" path="res://Scenes/player_choice.tscn" id="3_t33e6"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_v6amk"]
 font = ExtResource("2_2x5cq")
@@ -23,6 +26,40 @@ grow_vertical = 2
 theme = ExtResource("1_njptv")
 script = ExtResource("2_yqatb")
 
+[node name="ChoicesContainer" type="CenterContainer" parent="." unique_id=466902838]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -301.0
+offset_top = -38.0
+offset_right = 399.0
+offset_bottom = 132.99988
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_njptv")
+
+[node name="ChoiceList" type="VBoxContainer" parent="ChoicesContainer" unique_id=1798762072]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_constants/separation = 7
+
+[node name="Button" parent="ChoicesContainer/ChoiceList" unique_id=1454429182 instance=ExtResource("3_t33e6")]
+visible = false
+layout_mode = 2
+
+[node name="TextBlipTimer" type="Timer" parent="." unique_id=1267520200]
+unique_name_in_owner = true
+wait_time = 0.481
+
+[node name="TextBlipSound" type="AudioStreamPlayer" parent="." unique_id=862112717]
+unique_name_in_owner = true
+stream = ExtResource("3_5t5tq")
+pitch_scale = 1.27
+script = ExtResource("3_kymi5")
+
 [node name="DialogBox" type="PanelContainer" parent="." unique_id=1963534806]
 custom_minimum_size = Vector2(0, 150)
 layout_mode = 1
@@ -40,8 +77,7 @@ theme = ExtResource("1_njptv")
 unique_name_in_owner = true
 layout_mode = 2
 bbcode_enabled = true
-text = "
-thuedifh ushdui dsikjci fhiudh shduh dsuhiduh sduihisudhfu thuedifh ushdui udhfiusdhfiu "
+text = "This is an example line of dialogue."
 
 [node name="SpeakerBox" type="PanelContainer" parent="." unique_id=548200346]
 custom_minimum_size = Vector2(200, 60)
@@ -76,6 +112,6 @@ grow_vertical = 0
 theme = ExtResource("1_njptv")
 
 [node name="Polygon2D" type="Polygon2D" parent="Control" unique_id=1887292942]
-position = Vector2(-69.000046, -29.000015)
+position = Vector2(-69.000046, -27.000015)
 scale = Vector2(1.0285422, 1.7499992)
 polygon = PackedVector2Array(0, 0, 27.856323, 11.162811, 55, 0, 27, 32, 14.404358, 17.071808)

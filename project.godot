@@ -14,14 +14,15 @@ compatibility/default_parent_skeleton_in_mesh_instance_3d=true
 
 [application]
 
-config/name="The Roadside Chorus"
-run/main_scene="uid://tgnrjl2bja2i"
+config/name="The Roadside Chorus - Final Version"
+run/main_scene="uid://djp610mncu2vj"
 config/features=PackedStringArray("4.6", "Mobile")
 config/icon="res://icon.svg"
 
 [autoload]
 
-Dialogic="*uid://ds2q0uclmolvu"
+SceneManager="*uid://cv0g1jb13l5xc"
+GameState="*res://Imported/HabitatFragmentation/src/game_state.gd"
 
 [dialogic]
 
@@ -66,6 +67,11 @@ audio/channel_defaults={
 "volume": 0.0
 }
 }
+
+[display]
+
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
 
 [editor_plugins]
 

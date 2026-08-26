@@ -1,41 +1,42 @@
 [gd_scene format=3 uid="uid://be2gupdr5mp76"]
 
-[ext_resource type="Script" uid="uid://cwoog0bic8cds" path="res://Scripts/main_scene.gd" id="1_2aiaa"]
-[ext_resource type="Texture2D" uid="uid://bthxv1ggiwqcw" path="res://assets/Images/PLACEHOLDERbedroom_background.PNG" id="2_rtcas"]
-[ext_resource type="PackedScene" uid="uid://tgnrjl2bja2i" path="res://Scenes/character.tscn" id="3_c2lxa"]
-[ext_resource type="PackedScene" uid="uid://cs85hmukq2cs4" path="res://Scenes/dialog_ui.tscn" id="4_g8hvo"]
+[ext_resource type="Script" uid="uid://cwoog0bic8cds" path="res://Scripts/main_scene.gd" id="1_x6ack"]
+[ext_resource type="Texture2D" uid="uid://1iqmt143vbhx" path="res://assets/images/Outside-house.png" id="2_x6ack"]
+[ext_resource type="PackedScene" uid="uid://dbsfbb5piu54a" path="res://Scenes/character.tscn" id="3_6ev3c"]
+[ext_resource type="PackedScene" uid="uid://cs85hmukq2cs4" path="res://Scenes/dialog_ui.tscn" id="4_maf8m"]
 
 [node name="MainScene" type="Node2D" unique_id=1844694227]
-script = ExtResource("1_2aiaa")
+script = ExtResource("1_x6ack")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=2130658078]
 layer = -1
 
-[node name="TextureRect" type="TextureRect" parent="CanvasLayer" unique_id=1126431741]
+[node name="Background" type="TextureRect" parent="CanvasLayer" unique_id=1126431741]
+unique_name_in_owner = true
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("2_rtcas")
+texture = ExtResource("2_x6ack")
 
 [node name="CanvasLayer2" type="CanvasLayer" parent="." unique_id=628146881]
 
 [node name="Control" type="Control" parent="CanvasLayer2" unique_id=836549542]
 layout_mode = 3
-anchors_preset = 8
+anchors_preset = 7
 anchor_left = 0.5
-anchor_top = 0.5
+anchor_top = 1.0
 anchor_right = 0.5
-anchor_bottom = 0.5
+anchor_bottom = 1.0
 grow_horizontal = 2
-grow_vertical = 2
+grow_vertical = 0
 size_flags_stretch_ratio = 0.8
 
-[node name="character" parent="CanvasLayer2/Control" unique_id=1701866460 instance=ExtResource("3_c2lxa")]
+[node name="CharacterSprite" parent="CanvasLayer2/Control" unique_id=1802235858 instance=ExtResource("3_6ev3c")]
 unique_name_in_owner = true
-position = Vector2(350.00006, 114.99993)
-scale = Vector2(5.76, 5.76)
+position = Vector2(-18.59, -303.59)
+scale = Vector2(0.34, 0.34)
 
-[node name="dialog_ui" parent="CanvasLayer2" unique_id=917116363 instance=ExtResource("4_g8hvo")]
+[node name="dialog_ui" parent="CanvasLayer2" unique_id=917116363 instance=ExtResource("4_maf8m")]
 unique_name_in_owner = true

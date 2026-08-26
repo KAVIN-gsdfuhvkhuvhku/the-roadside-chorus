@@ -1,0 +1,29 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://dntp0b2r56htf"]
+
+[ext_resource type="Texture2D" uid="uid://bt4dfsqhkuvxk" path="res://assets/Sprites/Monty/Grandma Neutral + Blink3_20260823215338 2.PNG" id="1_xg41g"]
+[ext_resource type="Texture2D" uid="uid://dvx6d6vy182h8" path="res://assets/Sprites/Monty/Grandma Neutral + Blink3_20260823215509 2.PNG" id="2_inbee"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 5.0,
+"texture": ExtResource("1_xg41g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_inbee")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_xg41g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_inbee")
+}],
+"loop": true,
+"name": &"talking",
+"speed": 5.0
+}]

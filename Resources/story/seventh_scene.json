@@ -1,0 +1,103 @@
+[
+{"location": "forest"},
+
+{ "speaker": "Narrator", "text": "You follow the flitting tūī through the forest until the trees begin to thin out." },
+{ "speaker": "You", "text": "Where is it going?" },
+
+{"location": "conservation_center"},
+{ "speaker": "Narrator", "text": "You step out of the trees and find yourself standing outside a small conservation centre." },
+{ "speaker": "You", "text": "A conservation centre?" },
+
+{ "speaker": "Narrator", "text": "The tūī lands on the roof before flying through an open window." },
+{ "speaker": "You", "text": "Hey! Wait for me!" },
+
+{ "speaker": "Narrator", "text": "As you approach the building, you faintly hear the familiar melody from the forest." },
+{ "speaker": "You", "text": "Huh... that music again." },
+
+{"location": "Conservation_inside_box"},
+
+{ "speaker": "Narrator", "text": "You walk inside." },
+{ "speaker": "Helper", "text": "Oh, hello. Can I help you?" },
+{ "speaker": "You", "text": "I... think so." },
+
+{ "speaker": "Helper", "text": "You look a little lost." },
+{ "speaker": "You", "text": "I followed a hedgehog into the forest. Then I met a talking tūī." },
+
+{ "speaker": "Helper", "text": "...A talking tūī?" },
+{ "speaker": "You", "text": "Yeah." },
+{ "speaker": "Helper", "text": "Right. Of course." },
+
+{ "speaker": "You", "text": "It told me about habitat fragmentation." },
+{ "speaker": "Helper", "text": "Well then, technically you've come to the right place." },
+
+{ "speaker": "You", "text": "What do you mean?" },
+{ "speaker": "Helper", "text": "We work with local Auckland wildlife and help people understand the problems they face." },
+
+{ "speaker": "Helper", "text": "Actually, we have something that might help you understand what your so-called tūī was talking about." },
+
+{ "speaker": "Narrator", "text": "The helper points towards a familiar-looking box sitting on a table." },
+{ "speaker": "You", "text": "Wait... that box?" },
+
+{ "speaker": "Helper", "text": "You were supposed to deliver it, weren't you?" },
+{ "speaker": "You", "text": "Yeah. I was taking it here for my grandmother. But how did it get here? I left it in my car..." },
+{ "speaker": "You", "text": "With MONTY. OH NO. I LEFT MONTY IN MY CAR!" },
+
+{ "speaker": "Helper", "text": "Well, it looks like they both made it!" },
+{ "speaker": "Monty", "text": "WOOF WOOF. WOOF." },
+
+{ "speaker": "You", "text": "MONTY! I'm so sorry. Are you okay?" },
+{ "speaker": "Monty", "text": "Woof." },
+
+{ "speaker": "You", "text": "I'll never leave you in a car alone again, I promise." },
+{ "speaker": "Monty", "text": "Woof woof woof." },
+
+{ "speaker": "You", "text": "What's inside the box anyways?" },
+
+{ "speaker": "Helper", "text": "A few things about the wildlife around here." },
+{ "speaker": "Helper", "text": "There's also a little puzzle inside. It shows how habitat fragmentation affects different animals." },
+
+{"location": "Conservation_inside"},
+
+{ "speaker": "You", "text": "So the box was supposed to teach me about this?" },
+{ "speaker": "Helper", "text": "Maybe your grandmother knew you'd need a little help." },
+{ "speaker": "You", "text": "She probably did." },
+
+{ "speaker": "Narrator", "text": "The helper opens the box and takes out a strange-looking set of tiles." },
+
+{ "speaker": "You", "text": "What am I supposed to do with those?" },
+
+{ "speaker": "Helper", "text": "Think of the tiles as pieces of an animal's habitat." },
+{ "speaker": "Helper", "text": "When roads, buildings, or other obstacles break up a habitat, animals can have trouble moving between the pieces." },
+
+{ "speaker": "You", "text": "So the puzzle is about putting their habitat back together?" },
+
+{ "speaker": "Helper", "text": "Exactly." },
+{ "speaker": "Helper", "text": "Each puzzle starts with the habitat completely jumbled up. Your job is to swap the tiles until they form one continuous pathway." },
+
+{ "speaker": "You", "text": "How do I swap them?" },
+
+{ "speaker": "Helper", "text": "Just click on the tiles you want to swap." },
+{ "speaker": "Helper", "text": "You'll need to arrange them in consecutive order, from the beginning of the pathway to the end." },
+
+{ "speaker": "You", "text": "Is there a time limit?" },
+
+{ "speaker": "Helper", "text": "Nope. Take as much time as you need." },
+{ "speaker": "Helper", "text": "The point isn't to be fast. It's to understand how fragmented habitats can be connected again." },
+
+{ "speaker": "You", "text": "Okay... so what's the first puzzle?" },
+
+{ "speaker": "Helper", "text": "The first one is about the long-tailed bat, or pekapeka-roa." },
+{ "speaker": "Helper", "text": "It's a 3 by 3 grid, so it's the easier of the two." },
+
+{ "speaker": "You", "text": "And the second one?" },
+
+{ "speaker": "Helper", "text": "The second is about īnanga. That one is a 4 by 4 grid, so you'll have quite a few more pieces to organise." },
+
+{ "speaker": "You", "text": "So... easy first or straight into the hard one?" },
+
+{ "speaker": "Helper", "text": "It's up to you, but the hard mode is very challenging. I have to warn you. Once you begin a puzzle, you must complete it to continue." },
+{ "speaker": "You", "text": "Okay. I'll keep that in mind." },
+
+{"next_scene": "", "transition": "fade"}
+
+]

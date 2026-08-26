@@ -1,18 +1,87 @@
-extends Node2D
+class_name Character
+extends Node
 
-@onready var animated_sprite = $AnimatedSprite2D
-
-const CHARACTER_FRAMES = {
-	"You": preload("res://Resources/Protagonist_sprites.tres"),
-	"Grandma": preload("res://Resources/Grandma_sprites.tres")
+enum Name{
+	YOU,
+	GRANDMA,
+	HELPER,
+	MONTY,
+	PUKEKO,
+	HEDGEHOG,
+	TUI,
+	NARRATOR
 }
-# Called when the node enters the scene tree for the first time.
-func _ready() -> void:
-	pass # Replace with function body.
+
+const CHARACTER_DETAILS: Dictionary = {
+	Name.YOU:{
+		"name": "You",
+		"age": "19Y",
+		"flower": "Marigolds",
+		"type": "human",
+		"sprite_frames": preload("res://Resources/Protagonist_sprites.tres")
+	},
 	
-func change_character(character_name : String, is_talking : bool = true):
-	animated_sprite.sprite_frames = CHARACTER_FRAMES[character_name]
-	if is_talking:
-		animated_sprite.play("talking")
+	Name.GRANDMA:{
+		"name": "Grandma",
+		"age": "68Y",
+		"flower": "Dahlias",
+		"type": "human",
+		"sprite_frames": preload("res://Resources/Grandma_sprites.tres")
+	},
+	
+	Name.HELPER:{
+		"name": "Helper",
+		"age": "21Y",
+		"flower": "Bleeding-hearts",
+		"type": "human",
+		"sprite_frames": preload("res://Resources/Helper_sprites.tres")
+	},
+	
+	Name.MONTY:{
+		"name": "Monty",
+		"age": "6Y",
+		"flower": "daisies",
+		"type": "animal",
+		"sprite_frames": preload("res://Resources/Monty_sprites.tres")
+	},
+	
+	Name.PUKEKO:{
+		"name": "Pukeko",
+		"age": "4Y",
+		"flower": "swamp-lilies",
+		"type": "animal",
+		"sprite_frames": preload("res://Resources/Pukeko_sprites.tres")
+	},
+	
+	Name.HEDGEHOG:{
+		"name": "Hedgehog",
+		"age": "1Y",
+		"flower": "butter-cups",
+		"type": "animal",
+		"sprite_frames": preload("res://Resources/Hedgehog_sprites.tres")
+	},
+	
+	Name.TUI:{
+		"name": "Tui",
+		"age": "2Y",
+		"flower": "kowhai",
+		"type": "animal",
+		"sprite_frames": preload("res://Resources/Tui_sprites.tres")
+	},
+	
+	Name.NARRATOR:{
+		"name": "Narrator",
+		"age": "??",
+		"flower": "??",
+		"type": "??",
+		"sprite_frames": preload("res://Resources/Narrator_sprites.tres")
+	}
+}
+
+static func get_enum_from_string(string_value: String) -> int:
+	var upper_string = string_value.to_upper()
+	if Name.has(upper_string):
+		return Name[upper_string]
 	else:
-		animated_sprite.play("idle")
+		push_error("Invalid Character name: " + string_value)
+		return -1

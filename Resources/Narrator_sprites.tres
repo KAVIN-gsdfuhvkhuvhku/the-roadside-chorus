@@ -1,0 +1,14 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://dja5k32l8l4pt"]
+
+[resource]
+animations = [{
+"frames": [],
+"loop": true,
+"name": &"idle",
+"speed": 6.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"talking",
+"speed": 8.0
+}]

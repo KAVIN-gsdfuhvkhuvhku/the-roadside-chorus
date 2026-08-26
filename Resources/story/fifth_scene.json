@@ -1,0 +1,40 @@
+[
+{"location": "forest_road"},
+
+{ "speaker": "Narrator", "text": "You continue driving, still thinking about what just happened." },
+{ "speaker": "You", "text": "That was weird..." },
+
+{ "speaker": "Hedgehog", "text": "Scurry, scurry!" },
+{ "speaker": "You", "text": "Whoa! Again?" },
+
+{ "speaker": "Hedgehog", "text": "Scurry, scurry, gotta hurry!" },
+{ "speaker": "You", "text": "A hedgehog?" },
+
+{ "speaker": "Narrator", "text": "You watch as the hedgehog disappears towards the bushes." },
+{ "speaker": "You", "text": "Okay... that's two animals in one day." },
+
+{ "speaker": "Narrator", "text": "Then you hear something faint beneath the hum of the road." },
+{ "speaker": "You", "text": "Wait..." },
+
+{ "speaker": "Narrator", "text": "A familiar melody quietly drifts through the air." },
+{ "speaker": "You", "text": "No way..." },
+
+{ "speaker": "You", "text": "That's the same music I heard when I saw the pūkeko." },
+{ "speaker": "You", "text": "What is going on?" },
+
+{ "speaker": "Narrator", "text": "The music seems to be coming from somewhere beyond the bushes." },
+{ "speaker": "You", "text": "Maybe I should actually check where they're going." },
+{ "speaker": "You", "text": "Why are they all on the road?" },
+
+{ "speaker": "Narrator", "text": "You pull over and step out of the car." },
+{ "speaker": "Monty", "text": "Woof!" },
+{ "speaker": "You", "text": "Stay here, Monty. I'll be right back." },
+
+{ "speaker": "Narrator", "text": "The faint melody continues from the forest." },
+{ "speaker": "You", "text": "I've gotta investigate." },
+
+{ "speaker": "Narrator", "text": "You follow the hedgehog into the forest, following the strange music with it." },
+
+{"next_scene": "sixth_scene", "transition": "fade"}
+
+]

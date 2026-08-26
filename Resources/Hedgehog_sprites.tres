@@ -1,0 +1,29 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://uyj1dtpvgkhd"]
+
+[ext_resource type="Texture2D" uid="uid://b6vyyb2bct37w" path="res://assets/Sprites/Hedgehog/Grandma Neutral + Blink7_20260824235737.PNG" id="1_pvin0"]
+[ext_resource type="Texture2D" uid="uid://bgwv73o6tiam" path="res://assets/Sprites/Hedgehog/Grandma Neutral + Blink7_20260824235742.PNG" id="2_wxdqu"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 10.0,
+"texture": ExtResource("1_pvin0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_wxdqu")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_pvin0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_wxdqu")
+}],
+"loop": true,
+"name": &"talking",
+"speed": 5.0
+}]
