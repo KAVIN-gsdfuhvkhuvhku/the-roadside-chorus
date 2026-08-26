@@ -5,6 +5,26 @@ extends Node2D
 @onready var background = %Background
 #@onready var character: Character = %Character
 
+# Exact paths required for case-sensitive web/Linux builds.
+# Folder is assets/Images/ (capital I); some files use .PNG, others .png.
+const BACKGROUND_PATHS: Dictionary = {
+	"Bedroom": "res://assets/Images/Bedroom.PNG",
+	"Kitchen": "res://assets/Images/Kitchen.png",
+	"Outside-house": "res://assets/Images/Outside-house.PNG",
+	"forest": "res://assets/Images/forest.png",
+	"forest_road": "res://assets/Images/forest_road.png",
+	"conservation_center": "res://assets/Images/conservation_center.png",
+	"Conservation_inside": "res://assets/Images/Conservation_inside.png",
+	"Conservation_inside_box": "res://assets/Images/Conservation_inside_box.PNG",
+	"Home_sunset": "res://assets/Images/Home_sunset.png",
+	"protag_drive_pov": "res://assets/Images/protag_drive_pov.png",
+	"road_pukeko1": "res://assets/Images/road_pukeko1.png",
+	"road_pukeko2": "res://assets/Images/road_pukeko2.png",
+	"road_pukeko3": "res://assets/Images/road_pukeko3.PNG",
+	"Road-sea": "res://assets/Images/Road-sea.PNG",
+}
+const HABITAT_START_MENU_PATH := "res://Imported/HabitatFragmentation/Scenes/start_menu.tscn"
+
 var transition_effect: String = "fade"
 var dialog_file: String = "res://Resources/story/first_scene.json"
 var dialog_index: int = 0
@@ -63,8 +83,12 @@ func process_current_line():
 	#check if we need to change the location
 	if line.has("location"):
 		#change the background image automatically in a new scene
-		var background_file = "res://assets/images/" + line["location"] + ".png"
-		background.texture = load(background_file)
+		var loc_key = line["location"]
+		var background_file = BACKGROUND_PATHS.get(loc_key, "")
+		if background_file.is_empty():
+			printerr("Error: No background path defined for location: ", loc_key)
+		else:
+			background.texture = load(background_file)
 		#proceed to the next line without waiting for the user input
 		dialog_index += 1
 		process_current_line()
@@ -159,8 +183,13 @@ func _on_transition_out_completed():
 		dialog_index = 0
 		var first_line = dialog_lines[dialog_index]
 		if first_line.has("location"):
-			background.texture = load("res://assets/images/" + first_line["location"] + ".png")
-			dialog_index =+ 1
+			var loc_key = first_line["location"]
+			var background_file = BACKGROUND_PATHS.get(loc_key, "")
+			if background_file.is_empty():
+				printerr("Error: No background path defined for location: ", loc_key)
+			else:
+				background.texture = load(background_file)
+			dialog_index += 1
 		SceneManager.transition_in(transition_effect)
 	else:
 		var should_launch_habitat = true
@@ -168,7 +197,7 @@ func _on_transition_out_completed():
 			should_launch_habitat = !get_node("/root/GameState").habitat_completed
 
 		if should_launch_habitat:
-			get_tree().change_scene_to_file("res://Imported/HabitatFragmentation/Scenes/start_menu.tscn")
+			get_tree().change_scene_to_file(HABITAT_START_MENU_PATH)
 			SceneManager.transition_in()
 		else:
 			print("You've finished the game!")

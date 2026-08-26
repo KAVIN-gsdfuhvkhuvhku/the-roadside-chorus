@@ -20,9 +20,11 @@ const FACTS_TEXT := "[center]Long-tailed Bat / Pekapeka:[/center]
 
 func _ready():
 	# Load and show the bat image.
-	var img := Image.new()
-	if img.load(PEKAPEKA_IMAGE_PATH) == OK:
-		$CanvasLayer/Margin/Layout/FishImage.texture = ImageTexture.create_from_image(img)
+	var bat_tex := load(PEKAPEKA_IMAGE_PATH) as Texture2D
+	if bat_tex:
+		$CanvasLayer/Margin/Layout/FishImage.texture = bat_tex
+	else:
+		printerr("Failed to load texture resource: ", PEKAPEKA_IMAGE_PATH)
 
 	# Put the facts text into the scrollable facts panel.
 	$CanvasLayer/Margin/Layout/FactsScroll/Facts.text = FACTS_TEXT

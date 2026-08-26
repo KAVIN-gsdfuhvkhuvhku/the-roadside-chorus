@@ -147,13 +147,13 @@ func apply_easy_mode_textures(all_tiles: Array):
 	if empty_tex:
 		empty_tile.texture = empty_tex
 
-func load_image_texture(path: String) -> ImageTexture:
-	var img := Image.new()
-	var err := img.load(path)
-	if err != OK:
-		printerr("Failed to load image: ", path)
+func load_image_texture(path: String) -> Texture2D:
+	# In exports, source PNG files may be remapped; loading as a resource is web-safe.
+	var tex := load(path) as Texture2D
+	if tex == null:
+		printerr("Failed to load texture resource: ", path)
 		return null
-	return ImageTexture.create_from_image(img)
+	return tex
 
 func apply_hard_mode_textures(all_tiles: Array):
 	for i in range(min(HARD_TILE_TEXTURE_PATHS.size(), all_tiles.size())):
@@ -185,6 +185,9 @@ func _on_viewport_size_changed():
 func relayout_tiles():
 	# Scale each sprite to fit one grid cell, then place it by row/column.
 	for i in range(animal_zones.size()):
+		if animal_zones[i].texture == null:
+			printerr("Missing texture for tile: ", animal_zones[i].name)
+			continue
 		var texture_size = animal_zones[i].texture.get_size().x
 		var scale_factor = cell_size / texture_size
 		animal_zones[i].scale = Vector2(scale_factor, scale_factor)

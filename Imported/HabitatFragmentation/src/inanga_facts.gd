@@ -18,9 +18,11 @@ const FACTS_TEXT := "[center]Īnanga:[/center]
 
 func _ready():
 	# Load and show the fish image.
-	var img := Image.new()
-	if img.load(INANGA_IMAGE_PATH) == OK:
-		$CanvasLayer/Margin/Layout/FishImage.texture = ImageTexture.create_from_image(img)
+	var fish_tex := load(INANGA_IMAGE_PATH) as Texture2D
+	if fish_tex:
+		$CanvasLayer/Margin/Layout/FishImage.texture = fish_tex
+	else:
+		printerr("Failed to load texture resource: ", INANGA_IMAGE_PATH)
 
 	# Put the facts text into the scrollable facts panel.
 	$CanvasLayer/Margin/Layout/FactsScroll/Facts.text = FACTS_TEXT
